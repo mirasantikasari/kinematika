@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Modul pembelajaran interaktif Fisika SMA tentang Kinematika: konsep gerak, besaran, gerak lurus & vertikal, gerak dua dimensi (parabola), dan gerak melingkar — dengan simulasi, tabel, contoh soal, dan latihan.">
+<title>Kinematika — Modul Fisika SMA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/modul.css">
+</head>
+<body>
+
+<nav class="navmenu">
+  <button class="btn btn-dark btn-icon theme-toggle" type="button" aria-label="Ganti mode terang/gelap" aria-pressed="false">
+    <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.9" y1="4.9" x2="6.3" y2="6.3"/><line x1="17.7" y1="17.7" x2="19.1" y2="19.1"/><line x1="4.9" y1="19.1" x2="6.3" y2="17.7"/><line x1="17.7" y1="6.3" x2="19.1" y2="4.9"/></svg>
+  </button>
+  <button class="btn btn-dark btn-icon nav-toggle" type="button" aria-label="Buka daftar bagian" aria-expanded="false" aria-controls="nav-list">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+  </button>
+  <div class="nav-list" id="nav-list" hidden>
+    <a href="#bagian-1"><span class="n">Bagian 1</span><span class="t">Konsep Dasar Gerak &amp; Besaran</span></a>
+    <a href="#bagian-2"><span class="n">Bagian 2</span><span class="t">Gerak Lurus &amp; Gerak Vertikal</span></a>
+    <a href="#bagian-3"><span class="n">Bagian 3</span><span class="t">Gerak Dua Dimensi &amp; Melingkar</span></a>
+    <a href="#bagian-4"><span class="n">Bagian 4</span><span class="t">Latihan</span></a>
+  </div>
+</nav>
+
+<header class="hero hero--full">
+  <div class="img-ph hero-bg img-upload" data-bg="img/kinematika/Kelajuan.png" style="background-color:lightgrey"></div>
+  <div class="hero-inner">
+    <span class="kicker">Fisika · SMA · Kurikulum Merdeka</span>
+    <h1>Kinematika</h1>
+    <p class="dek">Cabang fisika yang mempelajari gerak benda tanpa membahas penyebabnya — dari langkah kaki menuju kelas hingga satelit yang mengelilingi Bumi.</p>
+    <a class="btn btn-primary btn-lg" href="#mulai">Mulai Belajar</a>
+  </div>
+</header>
+
+<main class="article" id="mulai">
+
+  <section class="prose">
+    <p>Dalam kehidupan sehari-hari, kita selalu melihat berbagai peristiwa gerak. Siswa berjalan menuju kelas, sepeda melaju di jalan, mobil berhenti di lampu merah, bola ditendang ke udara, air jatuh dari ketinggian, jarum jam berputar, dan satelit bergerak mengelilingi Bumi. Semua peristiwa tersebut dapat dipelajari dalam fisika melalui materi <strong>kinematika</strong>.</p>
+    <p><strong>Kinematika</strong> adalah cabang fisika yang mempelajari gerak benda tanpa membahas penyebab geraknya. Artinya, pada bab ini kita belum membahas gaya yang menyebabkan benda bergerak. Kita hanya mempelajari bagaimana benda berpindah tempat, seberapa cepat benda bergerak, bagaimana kecepatannya berubah, serta bagaimana bentuk lintasannya.</p>
+    <p>Materi kinematika penting karena menjadi dasar untuk memahami materi fisika lainnya, seperti gaya, energi, momentum, dan gerak benda dalam kehidupan nyata. Dengan memahami kinematika, siswa dapat menjelaskan mengapa mobil dapat bergerak semakin cepat, mengapa benda jatuh ke bawah, mengapa bola yang ditendang membentuk lintasan melengkung, dan mengapa benda yang bergerak melingkar tetap mengalami percepatan meskipun kelajuannya tetap.</p>
+  </section>
+
+  <section class="prose">
+    <h2>Tujuan Pembelajaran</h2>
+    <p>Setelah mempelajari bab ini, siswa diharapkan mampu:</p>
+    <ol>
+      <li>Menjelaskan pengertian gerak, titik acuan, posisi, jarak, dan perpindahan.</li>
+      <li>Membedakan besaran skalar dan besaran vektor dalam kinematika.</li>
+      <li>Menentukan kelajuan, kecepatan, dan percepatan benda.</li>
+      <li>Menggunakan persamaan GLB dan GLBB dalam penyelesaian masalah.</li>
+      <li>Menganalisis gerak jatuh bebas, gerak vertikal ke atas, dan gerak vertikal ke bawah.</li>
+      <li>Menjelaskan gerak parabola sebagai gabungan gerak horizontal dan vertikal.</li>
+      <li>Menjelaskan besaran-besaran pada gerak melingkar.</li>
+      <li>Menghubungkan konsep kinematika dengan peristiwa dalam kehidupan sehari-hari.</li>
+    </ol>
+  </section>
+
+  <!-- ============ BAGIAN 1 ============ -->
+  <div class="bagian-head" id="bagian-1">
+    <span class="bagian-num">Bagian 1</span>
+    <h2 class="bagian-title">Konsep Dasar Gerak dan Besaran Kinematika</h2>
+  </div>
+  <div class="cover wide"><div class="img-ph cover-ph img-upload" data-bg="img/kinematika/Gerak Parabola.png" style="background-color:lightgrey"></div></div>
+
+  <section class="prose has-side">
+    <h2>Pengertian Gerak</h2>
+    <p>Suatu benda dikatakan <strong>bergerak</strong> apabila kedudukannya berubah terhadap suatu titik acuan. Sebaliknya, benda dikatakan <strong>diam</strong> apabila kedudukannya tidak berubah terhadap titik acuan.</p>
+    <p>Contohnya, ketika kereta bergerak meninggalkan stasiun, orang yang berdiri di stasiun melihat kereta tersebut bergerak. Namun, penumpang yang duduk di dalam kereta dapat melihat penumpang lain tampak diam karena posisi mereka tidak berubah satu sama lain. Dari contoh tersebut, dapat dipahami bahwa gerak bersifat <strong>relatif</strong>, yaitu bergantung pada acuan yang digunakan.</p>
+    <p><strong>Titik acuan</strong> adalah titik atau benda yang dianggap tetap untuk menentukan posisi benda lain. Dalam fisika, titik acuan sering dianggap sebagai titik nol (\(x = 0\)). Jika benda berada di sebelah kanan titik acuan, posisinya dapat diberi tanda positif. Jika benda berada di sebelah kiri titik acuan, posisinya diberi tanda negatif.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-pengertian-gerak" aria-label="Putar video: Pengertian Gerak"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Gerak bersifat relatif: satu benda bisa "bergerak" bagi pengamat di stasiun, tetapi "diam" bagi pengamat di dalam kereta.</p>
+      </div>
+    </aside>
+  </section>
+
+  <div class="split split--reverse">
+    <div class="prose split-a">
+      <h2>Kedudukan atau Posisi</h2>
+      <p><strong>Kedudukan</strong> atau <strong>posisi</strong> adalah letak suatu benda terhadap titik acuan pada waktu tertentu. Posisi dapat dinyatakan menggunakan garis bilangan, koordinat, atau vektor posisi.</p>
+      <p>Pada gerak satu dimensi, posisi benda biasanya dinyatakan pada satu sumbu, misalnya sumbu-x.</p>
+    </div>
+    <div class="split-b">
+      <img class="ng-img img-upload" src="img/kinematika/Kedudukan atau Posisi.gif" alt="Kedudukan atau Posisi" loading="lazy" decoding="async" width="400" height="711" style="background-color:lightgrey">
+      <p class="media-cap">Kedudukan atau Posisi</p>
+    </div>
+  </div>
+  <div class="eq">
+    <div class="eq-label">Contoh posisi terhadap titik acuan</div>
+    <div class="eq-body"><span class="line">Benda 4 meter di kanan titik acuan &nbsp;→&nbsp; \(x = +4\,\text{m}\)</span><span class="line">Benda 6 meter di kiri titik acuan &nbsp;→&nbsp; \(x = -6\,\text{m}\)</span></div>
+  </div>
+
+  <div class="split">
+    <div class="prose split-a">
+      <h2>Jarak</h2>
+      <p><strong>Jarak</strong> adalah panjang seluruh lintasan yang ditempuh oleh benda selama bergerak. Jarak termasuk <strong>besaran skalar</strong>, karena hanya memiliki nilai dan tidak memiliki arah.</p>
+      <p>Contoh: Seorang siswa berjalan 10 meter ke timur, lalu kembali 4 meter ke barat. Jarak total yang ditempuh siswa adalah:</p>
+    </div>
+    <div class="split-b">
+      <img class="ng-img img-upload" src="img/kinematika/Jarak dan Perpindahan.gif" alt="Jarak dan Perpindahan" loading="lazy" decoding="async" width="400" height="711" style="background-color:lightgrey">
+      <p class="media-cap">Jarak vs. Perpindahan Apa Bedanya?</p>
+    </div>
+  </div>
+  <div class="eq">
+    <div class="eq-label">Contoh — jarak total</div>
+    <div class="eq-body">\(\displaystyle s = 10 + 4 = 14\,\text{m}\)</div>
+  </div>
+  <section class="prose">
+    <p>Jadi, jarak yang ditempuh siswa adalah <strong>14 meter</strong>.</p>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Perpindahan</h2>
+    <p><strong>Perpindahan</strong> adalah perubahan posisi benda dari titik awal ke titik akhir. Berbeda dengan jarak, perpindahan hanya memperhatikan posisi awal dan posisi akhir, bukan seluruh lintasan yang ditempuh. Perpindahan termasuk <strong>besaran vektor</strong> karena memiliki nilai dan arah.</p>
+    <p>Rumus perpindahan pada gerak satu dimensi adalah:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-perpindahan" aria-label="Putar video: Perpindahan"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Side Notes</span>
+        <p>Perpindahan bisa bernilai negatif atau nol — tandanya menunjukkan arah, bukan sekadar besar nilainya.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Perpindahan · Pers. (1)</div>
+    <div class="eq-body">\(\displaystyle \Delta x = x_2 - x_1\)</div>
+  </div>
+  <p class="ket">Keterangan: \(\Delta x\) = perpindahan; \(x_1\) = posisi awal; \(x_2\) = posisi akhir</p>
+  <div class="eq">
+    <div class="eq-label">Contoh 1 — benda dari \(x_1 = -2\,\text{m}\) ke \(x_2 = 8\,\text{m}\)</div>
+    <div class="eq-body">\(\displaystyle \Delta x = 8 - (-2) = 10\,\text{m}\)</div>
+  </div>
+  <section class="prose">
+    <p>Jadi, perpindahan benda adalah <strong>10 m ke arah positif</strong>.</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Contoh 2 — benda dari \(x_1 = 8\,\text{m}\) ke \(x_2 = 2\,\text{m}\)</div>
+    <div class="eq-body">\(\displaystyle \Delta x = 2 - 8 = -6\,\text{m}\)</div>
+  </div>
+  <section class="prose">
+    <p>Tanda negatif menunjukkan bahwa benda <strong>berpindah ke arah negatif</strong>.</p>
+  </section>
+
+  <section class="prose has-side">
+    <h2>Perbedaan Jarak dan Perpindahan</h2>
+    <p>Jarak dan perpindahan sering dianggap sama, padahal keduanya berbeda. Jarak adalah panjang lintasan, sedangkan perpindahan adalah perubahan posisi dari awal ke akhir.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-perbedaan-jarak-dan-perpindahan" aria-label="Putar video: Perbedaan Jarak dan Perpindahan"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Highlight</span>
+        <p>Mengelilingi lapangan lalu kembali ke titik awal: jaraknya besar, tetapi perpindahannya nol.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/Jarak dan Perpindahan.png" alt="Jarak dan Perpindahan" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>Jarak dan Perpindahan</figcaption>
+  </figure>
+  <div class="table-block">
+    <table class="data-table text-left">
+      <thead><tr><th>Aspek</th><th>Jarak</th><th>Perpindahan</th></tr></thead>
+      <tbody>
+        <tr><td>Pengertian</td><td>Panjang seluruh lintasan</td><td>Perubahan posisi dari awal ke akhir</td></tr>
+        <tr><td>Jenis besaran</td><td>Skalar</td><td>Vektor</td></tr>
+        <tr><td>Memiliki arah</td><td>Tidak</td><td>Ya</td></tr>
+        <tr><td>Bergantung lintasan</td><td>Ya</td><td>Tidak</td></tr>
+        <tr><td>Nilai</td><td>Selalu positif atau nol</td><td>Bisa positif, negatif, atau nol</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <section class="prose">
+    <p>Contoh: Seseorang berjalan 10 m ke timur, lalu 4 m ke barat. Maka jarak tempuh: \(s = 10 + 4 = 14\,\text{m}\), sedangkan perpindahan: \(\Delta x = 10 - 4 = 6\,\text{m}\). Jadi, jaraknya 14 m, sedangkan perpindahannya 6 m ke timur.</p>
+    <p>Jika seseorang berjalan mengelilingi lapangan dan kembali ke titik awal, maka jaraknya tidak nol karena ia menempuh lintasan tertentu. Namun, perpindahannya nol karena posisi awal dan posisi akhirnya sama.</p>
+  </section>
+
+  <!-- SIMULASI 1 -->
+  <figure class="wide">
+    <div class="sim-head panel-head">
+      <span class="panel-label">Simulasi 1</span>
+      <h3 class="panel-title">Jarak vs Perpindahan</h3>
+    </div>
+    <canvas class="sim-canvas" id="jp-canvas" aria-label="Simulasi jarak dan perpindahan pada garis bilangan."></canvas>
+    <div class="sim-controls">
+      <div class="ctrl">
+        <label for="jp-east">Jalan ke timur <output id="jp-out-east">10 m</output></label>
+        <input id="jp-east" type="range" min="0" max="20" value="10" step="1">
+      </div>
+      <div class="ctrl">
+        <label for="jp-west">Lalu ke barat <output id="jp-out-west">4 m</output></label>
+        <input id="jp-west" type="range" min="0" max="20" value="4" step="1">
+      </div>
+      <button id="jp-run" class="btn btn-dark" type="button">Jalankan</button>
+    </div>
+    <div class="sim-readout">
+      <div><span class="ro-label">Jarak tempuh</span><span class="ro-val" id="jp-ro-jarak">—</span></div>
+      <div><span class="ro-label">Perpindahan</span><span class="ro-val" id="jp-ro-pindah">—</span></div>
+      <div><span class="ro-label">Arah perpindahan</span><span class="ro-val" id="jp-ro-arah">—</span></div>
+    </div>
+    <figcaption>Atur langkah ke timur lalu ke barat, tekan "Jalankan". Garis kuning di atas sumbu menunjukkan perpindahan dari titik acuan (0).<span class="credit">Simulasi · garis bilangan satu dimensi</span></figcaption>
+  </figure>
+
+  <section class="prose has-side has-side--left">
+    <h2>Besaran Skalar dan Vektor</h2>
+    <p>Dalam kinematika, ada dua jenis besaran yang sering digunakan, yaitu <strong>besaran skalar</strong> dan <strong>besaran vektor</strong>.</p>
+    <p><strong>Besaran skalar</strong> adalah besaran yang hanya memiliki nilai, tetapi tidak memiliki arah. Contoh besaran skalar adalah jarak, kelajuan, waktu, massa, suhu, dan energi.</p>
+    <p><strong>Besaran vektor</strong> adalah besaran yang memiliki nilai dan arah. Contoh besaran vektor adalah perpindahan, kecepatan, percepatan, dan gaya.</p>
+    <p>Contoh perbedaan: "Mobil menempuh jarak 100 km." Kalimat tersebut hanya menunjukkan nilai, sehingga termasuk besaran skalar. "Mobil berpindah 100 km ke arah timur." Kalimat tersebut menunjukkan nilai dan arah, sehingga termasuk besaran vektor.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-besaran-skalar-dan-vektor" aria-label="Putar video: Besaran Skalar dan Vektor"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Cara cepat membedakannya: jika sebuah besaran memerlukan arah, ia tergolong vektor.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="prose has-side">
+    <h2>Kelajuan</h2>
+    <p><strong>Kelajuan</strong> adalah jarak yang ditempuh benda tiap satuan waktu. Kelajuan tidak memperhatikan arah gerak, sehingga termasuk <strong>besaran skalar</strong>. Kelajuan rata-rata dirumuskan sebagai:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-kelajuan" aria-label="Putar video: Kelajuan"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Informasi</span>
+        <p>Speedometer kendaraan menunjukkan kelajuan — ia tidak peduli ke arah mana kamu melaju.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/Kelajuan.png" alt="Kelajuan" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>Kelajuan</figcaption>
+  </figure>
+  <div class="eq">
+    <div class="eq-label">Kelajuan rata-rata · Pers. (2)</div>
+    <div class="eq-body">\(\displaystyle v = \frac{s}{t}\)</div>
+  </div>
+  <p class="ket">Keterangan: \(v\) = kelajuan rata-rata (m/s); \(s\) = jarak total (m); \(t\) = waktu tempuh (s)</p>
+  <section class="prose">
+    <p>Contoh: Seorang siswa bersepeda menempuh jarak 120 m dalam waktu 20 s. Kelajuan rata-ratanya adalah \(v = 120/20 = 6\,\text{m/s}\).</p>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Kecepatan</h2>
+    <p><strong>Kecepatan</strong> adalah perpindahan benda tiap satuan waktu. Kecepatan termasuk <strong>besaran vektor</strong> karena bergantung pada perpindahan yang memiliki arah. Kecepatan rata-rata dirumuskan sebagai:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-kecepatan" aria-label="Putar video: Kecepatan"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Highlight</span>
+        <p>Kelajuan memakai <i>jarak</i> (skalar), kecepatan memakai <i>perpindahan</i> (vektor) — itu beda utamanya.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/Kecepatan.png" alt="Kecepatan" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>Kecepatan</figcaption>
+  </figure>
+  <div class="eq">
+    <div class="eq-label">Kecepatan rata-rata · Pers. (3)</div>
+    <div class="eq-body">\(\displaystyle v_{\text{rata-rata}} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}\)</div>
+  </div>
+  <p class="ket">Keterangan: \(v_{\text{rata-rata}}\) = kecepatan rata-rata; \(\Delta x\) = perpindahan; \(\Delta t\) = selang waktu</p>
+  <section class="prose">
+    <p>Contoh: Sebuah benda bergerak dari posisi 5 m ke posisi 25 m dalam waktu 4 s. Kecepatan rata-ratanya adalah \(v_{\text{rata-rata}} = (25 - 5)/4 = 5\,\text{m/s}\). Jadi, kecepatan rata-rata benda adalah 5 m/s ke arah positif.</p>
+  </section>
+
+  <section class="prose has-side">
+    <h2>Kelajuan dan Kecepatan Sesaat</h2>
+    <p><strong>Kelajuan sesaat</strong> adalah besar kelajuan benda pada saat tertentu. Contoh alat yang menunjukkan kelajuan sesaat adalah speedometer pada kendaraan.</p>
+    <p><strong>Kecepatan sesaat</strong> adalah kecepatan benda pada waktu tertentu. Jika posisi benda dinyatakan sebagai fungsi waktu \(x(t)\), maka kecepatan sesaat dapat ditulis:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-kelajuan-dan-kecepatan-sesaat" aria-label="Putar video: Kelajuan dan Kecepatan Sesaat"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Side Notes</span>
+        <p>Kelajuan sesaat adalah angka yang terbaca di speedometer pada satu momen tertentu.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/Kelajuan.png" alt="Kelajuan" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>Kelajuan</figcaption>
+  </figure>
+  <div class="eq">
+    <div class="eq-label">Kecepatan sesaat · Pers. (4)</div>
+    <div class="eq-body">\(\displaystyle v = \frac{dx}{dt}\)</div>
+  </div>
+  <section class="prose">
+    <p>Arti dari persamaan tersebut yaitu kecepatan sesaat adalah perubahan posisi yang terjadi dalam selang waktu yang sangat kecil.</p>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Percepatan</h2>
+    <p><strong>Percepatan</strong> adalah perubahan kecepatan tiap satuan waktu. Benda dikatakan mengalami percepatan jika kecepatannya berubah. Perubahan kecepatan dapat berupa bertambah cepat, melambat, atau berubah arah. Percepatan rata-rata dirumuskan sebagai:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-percepatan" aria-label="Putar video: Percepatan"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Highlight</span>
+        <p>Percepatan tidak selalu berarti makin cepat — melambat pun percepatan, hanya arahnya berlawanan.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Percepatan rata-rata · Pers. (5)</div>
+    <div class="eq-body">\(\displaystyle a = \frac{\Delta v}{\Delta t} = \frac{v_2 - v_1}{t_2 - t_1}\)</div>
+  </div>
+  <p class="ket">Keterangan: \(a\) = percepatan (m/s²); \(v_1\) = kecepatan awal; \(v_2\) = kecepatan akhir; \(\Delta t\) = selang waktu</p>
+  <section class="prose">
+    <p>Contoh: Sebuah mobil mula-mula bergerak dengan kecepatan 5 m/s. Setelah 4 s, kecepatannya menjadi 25 m/s. Percepatan mobil adalah \(a = (25 - 5)/4 = 5\,\text{m/s}^2\). Artinya, setiap sekon atau detik kecepatan mobil bertambah 5 m/s.</p>
+    <p>Jika percepatan searah dengan kecepatan, benda akan semakin cepat (percepatan positif). Jika percepatan berlawanan arah dengan kecepatan, benda akan melambat (percepatan negatif).</p>
+  </section>
+
+  <!-- ============ BAGIAN 2 ============ -->
+  <div class="bagian-head" id="bagian-2">
+    <span class="bagian-num">Bagian 2</span>
+    <h2 class="bagian-title">Gerak Lurus dan Gerak Vertikal</h2>
+  </div>
+  <div class="cover wide"><div class="img-ph cover-ph img-upload" data-bg="img/kinematika/Gerak Jatuh Bebas.png" style="background-color:lightgrey"></div></div>
+
+  <section class="prose has-side">
+    <h2>Gerak Lurus</h2>
+    <p><strong>Gerak lurus</strong> adalah gerak benda yang lintasannya berupa garis lurus. Gerak lurus dapat terjadi pada jalan datar, lintasan kereta, benda jatuh, atau benda yang bergerak naik turun secara vertikal. Dalam pembahasan kinematika, gerak lurus dibagi menjadi dua jenis utama, yaitu:</p>
+    <ol>
+      <li>Gerak Lurus Beraturan atau GLB.</li>
+      <li>Gerak Lurus Berubah Beraturan atau GLBB.</li>
+    </ol>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-lurus" aria-label="Putar video: Gerak Lurus"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Informasi</span>
+        <p>Karena lintasannya lurus, gerak ini cukup dijelaskan dengan satu sumbu saja.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Gerak Lurus Beraturan (GLB)</h2>
+    <p><strong>Gerak Lurus Beraturan</strong> atau <strong>GLB</strong> adalah gerak benda pada lintasan lurus dengan kecepatan tetap. Karena kecepatannya tetap, benda tidak mengalami percepatan (\(a = 0\)).</p>
+    <p>Ciri-ciri GLB:</p>
+    <ul>
+      <li>lintasannya lurus,</li>
+      <li>kecepatannya tetap, percepatannya nol,</li>
+      <li>benda menempuh jarak yang sama dalam selang waktu yang sama.</li>
+    </ul>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-lurus-beraturan-glb" aria-label="Putar video: Gerak Lurus Beraturan (GLB)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Kecepatan tetap membuat grafik posisi terhadap waktu berupa garis lurus yang miring konstan.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/GLB dan Grafik GLB.png" alt="GLB dan Grafik GLB" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>GLB dan Grafik GLB</figcaption>
+  </figure>
+  <div class="eq">
+    <div class="eq-label">Persamaan GLB · Pers. (6)–(8)</div>
+    <div class="eq-body"><span class="line">\(\displaystyle s = v\,t\)<span class="tag">mencari jarak</span></span><span class="line">\(\displaystyle v = \frac{s}{t}\)<span class="tag">mencari kecepatan</span></span><span class="line">\(\displaystyle t = \frac{s}{v}\)<span class="tag">mencari waktu</span></span></div>
+  </div>
+  <p class="ket">Keterangan: \(s\) = jarak atau perpindahan (m); \(v\) = kecepatan (m/s); \(t\) = waktu (s)</p>
+  <section class="prose">
+    <p>Contoh: Sebuah mobil bergerak lurus dengan kecepatan tetap 20 m/s selama 10 s. Jarak yang ditempuh mobil adalah \(s = v\,t = 20 \times 10 = 200\,\text{m}\). Jadi, mobil menempuh jarak <strong>200 m</strong>.</p>
+  </section>
+
+  <section class="prose has-side">
+    <h2>Grafik pada GLB</h2>
+    <p>Pada GLB, grafik posisi terhadap waktu berbentuk garis lurus. Semakin curam garisnya, semakin besar kecepatan benda.</p>
+    <p>Pada grafik kecepatan terhadap waktu, bentuk grafiknya berupa garis mendatar karena kecepatan benda tetap.</p>
+    <p>Pada grafik \(v\)–\(t\), luas daerah di bawah grafik menunjukkan jarak atau perpindahan.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-grafik-pada-glb" aria-label="Putar video: Grafik pada GLB"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Side Notes</span>
+        <p>Pada grafik kecepatan–waktu, luas daerah di bawah garis menunjukkan jarak yang ditempuh.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Gerak Lurus Berubah Beraturan (GLBB)</h2>
+    <p><strong>Gerak Lurus Berubah Beraturan</strong> atau <strong>GLBB</strong> adalah gerak benda pada lintasan lurus dengan percepatan tetap. Pada GLBB, kecepatan benda berubah secara teratur.</p>
+    <p>Jika kecepatan benda bertambah secara teratur, geraknya disebut <strong>GLBB dipercepat</strong>. Jika kecepatan benda berkurang secara teratur, geraknya disebut <strong>GLBB diperlambat</strong>.</p>
+    <p>Ciri-ciri GLBB:</p>
+    <ul>
+      <li>lintasannya lurus,</li>
+      <li>percepatannya tetap,</li>
+      <li>kecepatan berubah secara teratur,</li>
+      <li>grafik kecepatan terhadap waktu berbentuk garis lurus.</li>
+    </ul>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-lurus-berubah-beraturan-glbb" aria-label="Putar video: Gerak Lurus Berubah Beraturan (GLBB)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Highlight</span>
+        <p>Percepatan tetap membuat kecepatan berubah teratur dan grafik kecepatan–waktu menjadi garis miring.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Persamaan GLBB · Pers. (9)–(11)</div>
+    <div class="eq-body"><span class="line">\(\displaystyle v_t = v_0 + a\,t\)</span><span class="line">\(\displaystyle v_t^{\,2} = v_0^{\,2} + 2as\)</span><span class="line">\(\displaystyle s = v_0\,t + \tfrac12 a\,t^2\)</span></div>
+  </div>
+  <p class="ket">Keterangan: \(v_0\) = kecepatan awal (m/s); \(v_t\) = kecepatan akhir (m/s); \(a\) = percepatan (m/s²); \(t\) = waktu (s); \(s\) = perpindahan atau jarak pada lintasan lurus (m)</p>
+  <div class="example">
+    <div class="panel-head"><span class="panel-label">Contoh Soal</span></div>
+    <div class="ex-row">
+      <span class="ex-tag">Soal</span>
+      <div class="ex-body"><p>Sebuah motor mula-mula diam, kemudian bergerak dengan percepatan tetap \(2\,\text{m/s}^2\) selama 5 s. Tentukan kecepatan akhir dan jarak yang ditempuh.</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Diketahui</span>
+      <div class="ex-body"><p>\(v_0 = 0\) (motor mula-mula diam) &nbsp;·&nbsp; \(a = 2\,\text{m/s}^2\) &nbsp;·&nbsp; \(t = 5\,\text{s}\)</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Penyelesaian</span>
+      <div class="ex-body">
+        <p><strong>Kecepatan akhir.</strong> \(v_t = v_0 + a\,t = 0 + 2(5) = 10\,\text{m/s}\).</p>
+        <p><strong>Jarak.</strong> \(s = v_0\,t + \tfrac12 a\,t^2 = 0(5) + \tfrac12 (2)(5^2) = 25\,\text{m}\).</p>
+      </div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Jawaban</span>
+      <div class="ex-body"><div class="ex-answer">Kecepatan akhir = 10 m/s &nbsp;·&nbsp; Jarak yang ditempuh = 25 m</div></div>
+    </div>
+  </div>
+
+  <!-- SIMULASI 2 -->
+  <figure class="wide">
+    <div class="sim-head panel-head">
+      <span class="panel-label">Simulasi 2</span>
+      <h3 class="panel-title">GLB &amp; GLBB — grafik kecepatan-waktu</h3>
+    </div>
+    <canvas class="sim-canvas" id="lr-canvas" aria-label="Grafik kecepatan terhadap waktu untuk GLB dan GLBB."></canvas>
+    <div class="sim-controls">
+      <div class="ctrl">
+        <label for="lr-v0">Kecepatan awal <output id="lr-out-v0">5 m/s</output></label>
+        <input id="lr-v0" type="range" min="0" max="20" value="5" step="1">
+      </div>
+      <div class="ctrl">
+        <label for="lr-a">Percepatan <output id="lr-out-a">2 m/s²</output></label>
+        <input id="lr-a" type="range" min="-4" max="4" value="2" step="0.5">
+      </div>
+      <div class="ctrl">
+        <label for="lr-t">Waktu <output id="lr-out-t">5 s</output></label>
+        <input id="lr-t" type="range" min="1" max="10" value="5" step="1">
+      </div>
+      <button id="lr-run" class="btn btn-dark" type="button">Jalankan</button>
+    </div>
+    <div class="sim-readout">
+      <div><span class="ro-label">Jenis gerak</span><span class="ro-val" id="lr-ro-mode">—</span></div>
+      <div><span class="ro-label">Kecepatan akhir</span><span class="ro-val" id="lr-ro-vt">—</span></div>
+      <div><span class="ro-label">Jarak (luas grafik)</span><span class="ro-val" id="lr-ro-s">—</span></div>
+    </div>
+    <figcaption>Saat percepatan = 0 grafik mendatar (GLB); saat percepatan ≠ 0 grafik miring (GLBB). Luas di bawah grafik = jarak.<span class="credit">Simulasi · grafik v–t</span></figcaption>
+  </figure>
+
+  <section class="prose has-side">
+    <h2>Gerak Vertikal</h2>
+    <p><strong>Gerak vertikal</strong> adalah gerak benda pada arah atas atau bawah yang dipengaruhi oleh gravitasi. Di dekat permukaan Bumi, percepatan gravitasi biasanya dinyatakan \(g = 9{,}8\,\text{m/s}^2\). Dalam banyak soal, nilai tersebut sering dibulatkan menjadi \(g = 10\,\text{m/s}^2\).</p>
+    <p>Arah gravitasi selalu ke bawah. Oleh karena itu, benda yang bergerak vertikal akan mengalami percepatan ke bawah.</p>
+    <p>Gerak vertikal dapat dibagi menjadi tiga jenis:</p>
+    <ol>
+      <li>Gerak jatuh bebas.</li>
+      <li>Gerak vertikal ke bawah.</li>
+      <li>Gerak vertikal ke atas.</li>
+    </ol>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-vertikal" aria-label="Putar video: Gerak Vertikal"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Informasi</span>
+        <p>Semua gerak vertikal dikendalikan gravitasi yang arahnya selalu menuju ke bawah.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Gerak Jatuh Bebas</h2>
+    <p><strong>Gerak jatuh bebas</strong> adalah gerak benda yang jatuh dari ketinggian tertentu tanpa kecepatan awal. Pada gerak ini, benda hanya dipengaruhi oleh gravitasi jika hambatan udara diabaikan.</p>
+    <p>Ciri-ciri gerak jatuh bebas:</p>
+    <ul>
+      <li>Kecepatan awal sama dengan nol: \(v_0 = 0\)</li>
+      <li>Percepatan sama dengan percepatan gravitasi: \(a = g\)</li>
+    </ul>
+    <p>Maka persamaannya adalah:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-jatuh-bebas" aria-label="Putar video: Gerak Jatuh Bebas"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Tanpa hambatan udara, benda ringan dan berat jatuh dengan percepatan yang sama persis.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Gerak jatuh bebas · Pers. (12)–(14)</div>
+    <div class="eq-body"><span class="line">\(\displaystyle v_t = g\,t\)</span><span class="line">\(\displaystyle h = \tfrac12 g\,t^2\)</span><span class="line">\(\displaystyle v_t^{\,2} = 2gh\)</span></div>
+  </div>
+  <p class="ket">Keterangan: \(h\) = ketinggian atau jarak jatuh (m); \(g\) = percepatan gravitasi (m/s²); \(t\) = waktu jatuh (s); \(v_t\) = kecepatan pada waktu \(t\)</p>
+  <div class="example">
+    <div class="panel-head"><span class="panel-label">Contoh Soal</span></div>
+    <div class="ex-row">
+      <span class="ex-tag">Soal</span>
+      <div class="ex-body"><p>Sebuah batu dijatuhkan dari ketinggian 45 m. Jika \(g = 10\,\text{m/s}^2\), tentukan waktu yang dibutuhkan batu untuk sampai ke tanah.</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Penyelesaian</span>
+      <div class="ex-body">
+        <p>\(h = \tfrac12 g\,t^2\) &nbsp;→&nbsp; \(45 = \tfrac12 (10)\,t^2\)</p>
+        <p>\(45 = 5t^2\) &nbsp;→&nbsp; \(t^2 = 9\) &nbsp;→&nbsp; \(t = 3\,\text{s}\)</p>
+      </div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Jawaban</span>
+      <div class="ex-body"><div class="ex-answer">Batu sampai ke tanah setelah 3 sekon.</div></div>
+    </div>
+  </div>
+
+  <section class="prose has-side">
+    <h2>Gerak Vertikal ke Bawah</h2>
+    <p><strong>Gerak vertikal ke bawah</strong> adalah gerak benda yang dilempar ke bawah dengan kecepatan awal tertentu. Berbeda dari gerak jatuh bebas, gerak vertikal ke bawah memiliki kecepatan awal.</p>
+    <p>Ciri-cirinya:</p>
+    <ul>
+      <li>Memiliki kecepatan awal: \(v_0 \neq 0\)</li>
+      <li>Percepatan benda sama dengan percepatan gravitasi: \(a = g\)</li>
+    </ul>
+    <p>Persamaannya adalah:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-vertikal-ke-bawah" aria-label="Putar video: Gerak Vertikal ke Bawah"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Side Notes</span>
+        <p>Berbeda dari jatuh bebas: di sini benda sudah memiliki kecepatan awal saat dilepaskan.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Gerak vertikal ke bawah · Pers. (15)–(17)</div>
+    <div class="eq-body"><span class="line">\(\displaystyle v_t = v_0 + g\,t\)</span><span class="line">\(\displaystyle h = v_0\,t + \tfrac12 g\,t^2\)</span><span class="line">\(\displaystyle v_t^{\,2} = v_0^{\,2} + 2gh\)</span></div>
+  </div>
+  <section class="prose">
+    <p>Contoh peristiwa gerak vertikal ke bawah adalah bola yang dilempar dari atas gedung ke arah bawah. Bola sudah memiliki kecepatan awal, kemudian kecepatannya bertambah karena pengaruh gravitasi.</p>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Gerak Vertikal ke Atas</h2>
+    <p><strong>Gerak vertikal ke atas</strong> adalah gerak benda yang dilempar ke atas dengan kecepatan awal tertentu. Ketika benda bergerak ke atas, arah geraknya berlawanan dengan arah gravitasi. Akibatnya, kecepatan benda semakin lama semakin kecil.</p>
+    <p>Jika arah ke atas dianggap positif, maka percepatan gravitasi bernilai negatif \(a = -g\).</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-vertikal-atas" aria-label="Putar video: Gerak Vertikal ke Atas"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Catatan</span>
+        <p>Di titik tertinggi kecepatan sesaat benda nol, lalu benda kembali turun seperti gerak jatuh bebas.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/Gerak Vertikal ke Atas.png" alt="Gerak Vertikal ke Atas" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>Gerak Vertikal ke Atas</figcaption>
+  </figure>
+  <div class="eq">
+    <div class="eq-label">Gerak vertikal ke atas · Pers. (18)–(20)</div>
+    <div class="eq-body"><span class="line">\(\displaystyle v_t = v_0 - g\,t\)</span><span class="line">\(\displaystyle h = v_0\,t - \tfrac12 g\,t^2\)</span><span class="line">\(\displaystyle v_t^{\,2} = v_0^{\,2} - 2gh\)</span></div>
+  </div>
+  <section class="prose">
+    <p>Pada titik tertinggi, kecepatan benda sesaat menjadi nol: \(v_t = 0\). Maka tinggi maksimum:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Tinggi maksimum · Pers. (21)</div>
+    <div class="eq-body">\(\displaystyle h_{\text{maks}} = \frac{v_0^{\,2}}{2g}\)</div>
+  </div>
+  <div class="eq">
+    <div class="eq-label">Waktu mencapai titik tertinggi · Pers. (22)</div>
+    <div class="eq-body">\(\displaystyle t_{\text{maks}} = \frac{v_0}{g}\)</div>
+  </div>
+  <section class="prose">
+    <p>Jika benda kembali ke posisi awal, waktu total di udara adalah:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Waktu total di udara · Pers. (23)</div>
+    <div class="eq-body">\(\displaystyle t_{\text{total}} = 2\,t_{\text{maks}}\)</div>
+  </div>
+  <div class="example">
+    <div class="panel-head"><span class="panel-label">Contoh Soal</span></div>
+    <div class="ex-row">
+      <span class="ex-tag">Soal</span>
+      <div class="ex-body"><p>Sebuah bola dilempar vertikal ke atas dengan kecepatan awal 20 m/s. Jika \(g = 10\,\text{m/s}^2\), tentukan tinggi maksimum bola.</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Penyelesaian</span>
+      <div class="ex-body"><p>\(\displaystyle h_{\text{maks}} = \frac{v_0^{\,2}}{2g} = \frac{20^2}{2(10)} = \frac{400}{20} = 20\,\text{m}\).</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Jawaban</span>
+      <div class="ex-body"><div class="ex-answer">Tinggi maksimum bola adalah 20 m.</div></div>
+    </div>
+  </div>
+
+  <!-- SIMULASI 3 -->
+  <figure class="wide">
+    <div class="sim-head panel-head">
+      <span class="panel-label">Simulasi 3</span>
+      <h3 class="panel-title">Gerak Vertikal</h3>
+    </div>
+    <div class="sim-head mode-btns" role="group" aria-label="Pilih jenis gerak vertikal">
+      <button class="btn btn-ghost btn-sm is-active" type="button" data-gvmode="jatuh">Jatuh Bebas</button>
+      <button class="btn btn-ghost btn-sm" type="button" data-gvmode="bawah">Vertikal ke Bawah</button>
+      <button class="btn btn-ghost btn-sm" type="button" data-gvmode="atas">Vertikal ke Atas</button>
+    </div>
+    <canvas class="sim-canvas" id="gv-canvas" aria-label="Simulasi gerak vertikal benda."></canvas>
+    <div class="sim-controls">
+      <div class="ctrl">
+        <label for="gv-v0">Kecepatan awal <output id="gv-out-v0">0 m/s</output></label>
+        <input id="gv-v0" type="range" min="0" max="30" value="0" step="1">
+      </div>
+      <div class="ctrl">
+        <label for="gv-h">Ketinggian awal <output id="gv-out-h">45 m</output></label>
+        <input id="gv-h" type="range" min="5" max="80" value="45" step="5">
+      </div>
+      <button id="gv-run" class="btn btn-dark" type="button">Jalankan</button>
+    </div>
+    <div class="sim-readout">
+      <div><span class="ro-label">Waktu di udara</span><span class="ro-val" id="gv-ro-t">—</span></div>
+      <div><span class="ro-label">Kecepatan tiba</span><span class="ro-val" id="gv-ro-v">—</span></div>
+      <div><span class="ro-label">Tinggi</span><span class="ro-val" id="gv-ro-h">—</span></div>
+    </div>
+    <figcaption>Pilih jenis gerak: jatuh bebas (tanpa kecepatan awal), vertikal ke bawah, atau vertikal ke atas. Tekan "Jalankan".<span class="credit">Simulasi · g = 10 m/s²</span></figcaption>
+  </figure>
+
+  <!-- ============ BAGIAN 3 ============ -->
+  <div class="bagian-head" id="bagian-3">
+    <span class="bagian-num">Bagian 3</span>
+    <h2 class="bagian-title">Gerak Dua Dimensi dan Gerak Melingkar</h2>
+  </div>
+  <div class="cover wide"><div class="img-ph cover-ph img-upload" data-bg="img/kinematika/Gerak Melingkar.png" style="background-color:lightgrey"></div></div>
+
+  <section class="prose has-side">
+    <h2>Gerak Dua Dimensi</h2>
+    <p>Pada gerak satu dimensi, benda hanya bergerak pada satu garis lurus. Namun, dalam kehidupan sehari-hari banyak benda bergerak pada dua arah sekaligus. Contohnya, bola yang ditendang melambung bergerak ke depan sekaligus ke atas, lalu turun kembali. Gerak seperti ini disebut <strong>gerak dua dimensi</strong>.</p>
+    <p>Gerak dua dimensi dapat dianalisis dengan memisahkan gerak pada dua sumbu yang saling tegak lurus, yaitu sumbu-x = arah horizontal dan sumbu-y = arah vertikal.</p>
+    <p>Salah satu contoh penting gerak dua dimensi adalah <strong>gerak parabola</strong>.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-dua-dimensi" aria-label="Putar video: Gerak Dua Dimensi"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Kunci analisisnya: uraikan gerak menjadi dua arah yang saling tegak lurus, lalu tinjau terpisah.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Gerak Parabola</h2>
+    <p><strong>Gerak parabola</strong> adalah gerak benda yang lintasannya berbentuk parabola. Gerak ini terjadi karena perpaduan dua gerak, yaitu GLB pada arah horizontal dan GLBB pada arah vertikal. Pada arah horizontal, benda bergerak dengan kecepatan tetap. Pada arah vertikal, benda dipengaruhi oleh percepatan gravitasi.</p>
+    <p>Contoh gerak parabola dalam kehidupan sehari-hari:</p>
+    <ul>
+      <li>bola basket yang dilempar ke ring,</li>
+      <li>bola sepak yang ditendang melambung,</li>
+      <li>peluru yang ditembakkan dengan sudut tertentu.</li>
+    </ul>
+    <p>Pada gerak parabola, hambatan udara biasanya diabaikan agar gerak lebih mudah dianalisis.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-parabola" aria-label="Putar video: Gerak Parabola"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Highlight</span>
+        <p>Gerak parabola adalah perpaduan gerak lurus beraturan mendatar dan gerak berubah beraturan pada arah tegak.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/Gerak Parabola.png" alt="Gerak Parabola" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>Gerak Parabola</figcaption>
+  </figure>
+
+  <section class="prose has-side">
+    <h2>Komponen Kecepatan Awal pada Gerak Parabola</h2>
+    <p>Jika benda dilempar dengan kecepatan awal \(v_0\) dan sudut elevasi \(\theta\) (sudut yang dibentuk terhadap sumbu-x), maka kecepatan awal dapat diuraikan menjadi dua komponen.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-komponen-parabola" aria-label="Putar video: Komponen Kecepatan Awal pada Gerak Parabola"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Komponen horizontal memakai \(\cos\theta\), komponen vertikal memakai \(\sin\theta\).</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Komponen kecepatan awal · Pers. (24)–(25)</div>
+    <div class="eq-body"><span class="line">\(\displaystyle v_{0x} = v_0 \cos\theta\)<span class="tag">horizontal</span></span><span class="line">\(\displaystyle v_{0y} = v_0 \sin\theta\)<span class="tag">vertikal</span></span></div>
+  </div>
+  <p class="ket">Keterangan: \(v_0\) = kecepatan awal; \(\theta\) = sudut elevasi; \(v_{0x}\) = kecepatan awal pada sumbu-x; \(v_{0y}\) = kecepatan awal pada sumbu-y</p>
+
+  <section class="prose has-side has-side--left">
+    <h2>Gerak pada Sumbu-x</h2>
+    <p>Pada sumbu-x, benda bergerak dengan kecepatan tetap karena tidak ada percepatan horizontal jika hambatan udara diabaikan. Sehingga kecepatan awal pada sumbu-x akan sama dengan kecepatan pada sumbu-x pada waktu kapanpun, sehingga \(v_x = v_{0x}\). Maka kecepatan horizontal (arah-x):</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-pada-sumbu-x" aria-label="Putar video: Gerak pada Sumbu-x"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Informasi</span>
+        <p>Tanpa gaya mendatar, kecepatan horizontal benda tetap sepanjang penerbangannya.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Kecepatan horizontal · Pers. (26)</div>
+    <div class="eq-body">\(\displaystyle v_x = v_0 \cos\theta\)</div>
+  </div>
+  <section class="prose">
+    <p>Posisi horizontal setelah waktu \(t\) menggunakan rumus GLB:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Posisi horizontal · Pers. (27)</div>
+    <div class="eq-body">\(\displaystyle x = v_0 \cos\theta \cdot t\)</div>
+  </div>
+
+  <section class="prose has-side">
+    <h2>Gerak pada Sumbu-y</h2>
+    <p>Pada sumbu-y, benda dipengaruhi oleh gravitasi. Karena gravitasi arahnya ke bawah, maka gerak pada sumbu-y merupakan GLBB. Kecepatan vertikal (sumbu-y) setelah waktu \(t\):</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-pada-sumbu-y" aria-label="Putar video: Gerak pada Sumbu-y"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Side Notes</span>
+        <p>Pada arah tegak, benda diperlakukan persis seperti gerak yang dipercepat gravitasi.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Kecepatan vertikal · Pers. (28)</div>
+    <div class="eq-body">\(\displaystyle v_y = v_0 \sin\theta - g\,t\)</div>
+  </div>
+  <section class="prose">
+    <p>Posisi vertikal (sumbu-y) setelah waktu \(t\):</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Posisi vertikal · Pers. (29)</div>
+    <div class="eq-body">\(\displaystyle y = v_0 \sin\theta \cdot t - \tfrac12 g\,t^2\)</div>
+  </div>
+
+  <section class="prose has-side has-side--left">
+    <h2>Kecepatan Benda pada Gerak Parabola</h2>
+    <p>Pada gerak parabola, kecepatan benda merupakan gabungan dari kecepatan horizontal dan kecepatan vertikal. Besar kecepatan benda:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-kecepatan-benda-pada-gerak-parabola" aria-label="Putar video: Kecepatan Benda pada Gerak Parabola"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Kecepatan sesungguhnya adalah gabungan dari komponen mendatar dan komponen tegaknya.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Besar kecepatan · Pers. (30)</div>
+    <div class="eq-body">\(\displaystyle v = \sqrt{v_x^{\,2} + v_y^{\,2}}\)</div>
+  </div>
+  <section class="prose">
+    <p>Arah kecepatan terhadap horizontal:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Arah kecepatan · Pers. (31)</div>
+    <div class="eq-body">\(\displaystyle \tan\theta = \frac{v_y}{v_x}\)</div>
+  </div>
+
+  <section class="prose has-side">
+    <h2>Titik Tertinggi pada Gerak Parabola</h2>
+    <p>Pada titik tertinggi, benda masih memiliki kecepatan horizontal, tetapi kecepatan vertikalnya sesaat menjadi nol \(v_y = 0\). Waktu untuk mencapai titik tertinggi:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-titik-tertinggi-pada-gerak-parabola" aria-label="Putar video: Titik Tertinggi pada Gerak Parabola"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Highlight</span>
+        <p>Di puncak lintasan, gerak ke atas berhenti sesaat, tetapi gerak mendatarnya terus berjalan.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Waktu titik tertinggi · Pers. (32)</div>
+    <div class="eq-body">\(\displaystyle t_{\text{maks}} = \frac{v_0 \sin\theta}{g}\)</div>
+  </div>
+  <section class="prose">
+    <p>Tinggi maksimum:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Tinggi maksimum · Pers. (33)</div>
+    <div class="eq-body">\(\displaystyle h_{\text{maks}} = \frac{v_0^{\,2} \sin^2\theta}{2g}\)</div>
+  </div>
+
+  <section class="prose has-side has-side--left">
+    <h2>Jangkauan Mendatar</h2>
+    <p><strong>Jangkauan mendatar</strong> adalah jarak terjauh yang dicapai benda pada arah horizontal. Jika benda kembali ke ketinggian semula (menyentuh tanah), jangkauan mendatar dapat dihitung dengan:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-jangkauan-mendatar" aria-label="Putar video: Jangkauan Mendatar"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Pada tanah datar, sudut 45° memberi jangkauan terjauh; sudut 30° dan 60° menghasilkan jangkauan yang sama.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Jangkauan mendatar · Pers. (34)</div>
+    <div class="eq-body">\(\displaystyle R = \frac{v_0^{\,2} \sin 2\theta}{g}\)</div>
+  </div>
+  <p class="ket">Keterangan: \(R\) = jangkauan mendatar; \(v_0\) = kecepatan awal; \(\theta\) = sudut elevasi; \(g\) = percepatan gravitasi</p>
+
+  <div class="example">
+    <div class="panel-head"><span class="panel-label">Contoh Soal — Gerak Parabola</span></div>
+    <div class="ex-row">
+      <span class="ex-tag">Soal</span>
+      <div class="ex-body"><p>Sebuah bola ditendang dengan kecepatan awal 20 m/s dan sudut elevasi 30°. Tentukan komponen kecepatan awal pada sumbu-x dan sumbu-y.</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Diketahui</span>
+      <div class="ex-body"><p>\(v_0 = 20\,\text{m/s}\) &nbsp;·&nbsp; \(\theta = 30^\circ\)</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Penyelesaian</span>
+      <div class="ex-body">
+        <p><strong>Komponen horizontal (sumbu-x).</strong> \(v_{0x} = v_0 \cos\theta = 20 \cos 30^\circ = 20\left(\tfrac{\sqrt3}{2}\right) = 10\sqrt3\,\text{m/s}\).</p>
+        <p><strong>Komponen vertikal (sumbu-y).</strong> \(v_{0y} = v_0 \sin\theta = 20 \sin 30^\circ = 20\left(\tfrac12\right) = 10\,\text{m/s}\).</p>
+      </div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Jawaban</span>
+      <div class="ex-body"><div class="ex-answer">\(v_{0x} = 10\sqrt3\,\text{m/s}\) &nbsp;·&nbsp; \(v_{0y} = 10\,\text{m/s}\)</div></div>
+    </div>
+  </div>
+
+  <!-- SIMULASI 4 -->
+  <figure class="wide">
+    <div class="sim-head panel-head">
+      <span class="panel-label">Simulasi 4</span>
+      <h3 class="panel-title">Luncurkan proyektil (gerak parabola)</h3>
+    </div>
+    <canvas class="sim-canvas" id="pb-canvas" aria-label="Simulasi lintasan proyektil gerak parabola."></canvas>
+    <div class="sim-controls">
+      <div class="ctrl">
+        <label for="pb-angle">Sudut elevasi <output id="pb-out-angle">45°</output></label>
+        <input id="pb-angle" type="range" min="10" max="80" value="45" step="1">
+      </div>
+      <div class="ctrl">
+        <label for="pb-vel">Kecepatan awal <output id="pb-out-vel">25 m/s</output></label>
+        <input id="pb-vel" type="range" min="10" max="40" value="25" step="1">
+      </div>
+      <button id="pb-launch" class="btn btn-dark" type="button">Luncurkan</button>
+    </div>
+    <div class="sim-readout">
+      <div><span class="ro-label">Jangkauan</span><span class="ro-val" id="pb-ro-range">—</span></div>
+      <div><span class="ro-label">Tinggi maks</span><span class="ro-val" id="pb-ro-height">—</span></div>
+      <div><span class="ro-label">Waktu di udara</span><span class="ro-val" id="pb-ro-time">—</span></div>
+    </div>
+    <figcaption>Geser sudut & kecepatan awal, lalu tekan "Luncurkan". Titik kuning menandai titik tertinggi.<span class="credit">Simulasi · g = 9,8 m/s²</span></figcaption>
+  </figure>
+
+  <section class="prose has-side">
+    <h2>Gerak Melingkar</h2>
+    <p><strong>Gerak melingkar</strong> adalah gerak benda pada lintasan berbentuk lingkaran. Jika benda bergerak pada lintasan lingkaran dengan kelajuan tetap, geraknya disebut <strong>Gerak Melingkar Beraturan</strong> atau <strong>GMB</strong>.</p>
+    <p>Contoh gerak melingkar:</p>
+    <ul>
+      <li>roda sepeda berputar,</li>
+      <li>jarum jam bergerak,</li>
+      <li>benda yang diikat tali lalu diputar,</li>
+      <li>satelit mengelilingi planet.</li>
+    </ul>
+    <p>Pada gerak melingkar beraturan, kelajuan benda tetap, tetapi arah kecepatannya selalu berubah. Karena arah kecepatan berubah, benda tetap mengalami percepatan. Percepatan ini disebut <strong>percepatan sentripetal</strong>, yaitu percepatan yang arahnya selalu menuju pusat lingkaran.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-gerak-melingkar" aria-label="Putar video: Gerak Melingkar"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Informasi</span>
+        <p>Kelajuan boleh tetap, tetapi arah kecepatan terus berubah — itulah sebabnya tetap ada percepatan.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="prose has-side has-side--left">
+    <h2>Periode dan Frekuensi</h2>
+    <p><strong>Periode</strong> adalah waktu yang diperlukan benda untuk melakukan satu putaran penuh.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-periode-dan-frekuensi" aria-label="Putar video: Periode dan Frekuensi"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Informasi</span>
+        <p>Periode dan frekuensi saling berkebalikan — makin sering berputar, makin singkat satu periodenya.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Periode · Pers. (35)</div>
+    <div class="eq-body">\(\displaystyle T = \frac{t}{n}\)</div>
+  </div>
+  <p class="ket">Keterangan: \(T\) = periode (s); \(t\) = waktu total (s); \(n\) = jumlah putaran</p>
+  <section class="prose">
+    <p><strong>Frekuensi</strong> adalah banyaknya putaran yang dilakukan benda setiap sekon.</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Frekuensi · Pers. (36)</div>
+    <div class="eq-body">\(\displaystyle f = \frac{n}{t}\)</div>
+  </div>
+  <p class="ket">Keterangan: \(f\) = frekuensi (Hz)</p>
+  <section class="prose">
+    <p>Hubungan periode dan frekuensi adalah:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Hubungan periode–frekuensi · Pers. (37)</div>
+    <div class="eq-body">\(\displaystyle f = \frac{1}{T}\)<span class="sep">↔</span>\(\displaystyle T = \frac{1}{f}\)</div>
+  </div>
+
+  <section class="prose has-side">
+    <h2>Kecepatan Sudut</h2>
+    <p><strong>Kecepatan sudut</strong> adalah besar sudut yang ditempuh benda tiap satuan waktu. Kecepatan sudut dilambangkan dengan \(\omega\).</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-kecepatan-sudut" aria-label="Putar video: Kecepatan Sudut"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Side Notes</span>
+        <p>Kecepatan sudut mengukur seberapa cepat sebuah sudut disapu dalam tiap satuan waktu.</p>
+      </div>
+    </aside>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Kecepatan sudut · Pers. (38)</div>
+    <div class="eq-body">\(\displaystyle \omega = \frac{\theta}{t}\)</div>
+  </div>
+  <section class="prose">
+    <p>Untuk satu putaran penuh, sudut yang ditempuh adalah \(2\pi\) radian. Maka:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Kecepatan sudut (satu putaran) · Pers. (39)</div>
+    <div class="eq-body">\(\displaystyle \omega = \frac{2\pi}{T}\)</div>
+  </div>
+  <section class="prose">
+    <p>Karena \(f = 1/T\), maka:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Kecepatan sudut & frekuensi · Pers. (40)</div>
+    <div class="eq-body">\(\displaystyle \omega = 2\pi f\)</div>
+  </div>
+  <p class="ket">Keterangan: \(\omega\) = kecepatan sudut (rad/s); \(\theta\) = sudut tempuh (rad); \(T\) = periode (s); \(f\) = frekuensi (Hz)</p>
+
+  <section class="prose has-side has-side--left">
+    <h2>Kelajuan Linear pada Gerak Melingkar</h2>
+    <p><strong>Kelajuan linear</strong> adalah kelajuan benda sepanjang lintasan lingkaran. Jika benda bergerak satu putaran penuh, jarak yang ditempuh adalah keliling lingkaran.</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-kelajuan-linear-pada-gerak-melingkar" aria-label="Putar video: Kelajuan Linear pada Gerak Melingkar"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Insight</span>
+        <p>Pada kecepatan putar yang sama, titik yang lebih jauh dari pusat bergerak lebih cepat.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/Kelajuan Linear pada Gerak Melingkar.png" alt="Kelajuan Linear pada Gerak Melingkar" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>Kelajuan Linear pada Gerak Melingkar</figcaption>
+  </figure>
+  <div class="eq">
+    <div class="eq-label">Keliling lintasan · Pers. (41)</div>
+    <div class="eq-body">\(\displaystyle s = 2\pi R\)</div>
+  </div>
+  <section class="prose">
+    <p>Kelajuan linear dapat ditentukan dengan persamaan:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Kelajuan linear · Pers. (42)</div>
+    <div class="eq-body">\(\displaystyle v = \frac{2\pi R}{T} = 2\pi R f\)</div>
+  </div>
+  <section class="prose">
+    <p>Kelajuan linear juga berhubungan dengan kecepatan sudut:</p>
+  </section>
+  <div class="eq">
+    <div class="eq-label">Kelajuan linear & kecepatan sudut · Pers. (43)</div>
+    <div class="eq-body">\(\displaystyle v = \omega R\)</div>
+  </div>
+  <p class="ket">Keterangan: \(v\) = kelajuan linear (m/s); \(R\) = jari-jari lintasan (m); \(\omega\) = kecepatan sudut (rad/s)</p>
+
+  <section class="prose has-side">
+    <h2>Percepatan Sentripetal</h2>
+    <p>Pada gerak melingkar beraturan, kelajuan benda tetap, tetapi arah kecepatannya selalu berubah. Karena kecepatan merupakan besaran vektor, perubahan arah kecepatan berarti benda mengalami percepatan.</p>
+    <p>Percepatan pada gerak melingkar disebut <strong>percepatan sentripetal</strong>. Arah percepatan sentripetal selalu menuju pusat lingkaran. Rumus percepatan sentripetal:</p>
+    <aside class="sidepanel">
+      <button class="side-badge video-link-button" type="button" data-video="vmodal-percepatan-sentripetal" aria-label="Putar video: Percepatan Sentripetal"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polygon points="7 4 19 12 7 20" fill="#ffffff"/></svg></button>
+      <div class="side-body">
+        <span class="side-label">Highlight</span>
+        <p>Kelajuannya boleh tetap, tetapi arah geraknya terus berubah — itulah sebabnya selalu ada percepatan ke pusat.</p>
+      </div>
+    </aside>
+  </section>
+  <figure class="figure-prose">
+    <img class="ng-img img-upload" src="img/kinematika/teknis/Percepatan Sentripetal.png" alt="Percepatan Sentripetal" loading="lazy" decoding="async" width="1024" height="768" style="background-color:lightgrey">
+    <figcaption>Percepatan Sentripetal</figcaption>
+  </figure>
+  <div class="eq">
+    <div class="eq-label">Percepatan sentripetal · Pers. (44)</div>
+    <div class="eq-body">\(\displaystyle a_s = \frac{v^2}{R} = \omega^2 R\)</div>
+  </div>
+  <p class="ket">Keterangan: \(a_s\) = percepatan sentripetal (m/s²); \(v\) = kelajuan linear (m/s); \(R\) = jari-jari lintasan (m); \(\omega\) = kecepatan sudut (rad/s)</p>
+  <div class="example">
+    <div class="panel-head"><span class="panel-label">Contoh Soal</span></div>
+    <div class="ex-row">
+      <span class="ex-tag">Soal</span>
+      <div class="ex-body"><p>Sebuah roda berjari-jari 0,5 m berputar dengan kecepatan sudut 4 rad/s. Tentukan kelajuan linear titik pada tepi roda.</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Diketahui</span>
+      <div class="ex-body"><p>\(R = 0{,}5\,\text{m}\) &nbsp;·&nbsp; \(\omega = 4\,\text{rad/s}\)</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Penyelesaian</span>
+      <div class="ex-body"><p>\(v = \omega R = 4(0{,}5) = 2\,\text{m/s}\).</p></div>
+    </div>
+    <div class="ex-row">
+      <span class="ex-tag">Jawaban</span>
+      <div class="ex-body"><div class="ex-answer">Kelajuan linear titik pada tepi roda adalah 2 m/s.</div></div>
+    </div>
+  </div>
+
+  <!-- SIMULASI 5 -->
+  <figure class="wide">
+    <div class="sim-head panel-head">
+      <span class="panel-label">Simulasi 5</span>
+      <h3 class="panel-title">Gerak Melingkar Beraturan</h3>
+    </div>
+    <canvas class="sim-canvas" id="cm-canvas" aria-label="Simulasi gerak melingkar beraturan dengan vektor kecepatan dan percepatan sentripetal."></canvas>
+    <div class="sim-controls">
+      <div class="ctrl">
+        <label for="cm-r">Jari-jari R <output id="cm-out-r">0,5 m</output></label>
+        <input id="cm-r" type="range" min="0.2" max="2" value="0.5" step="0.1">
+      </div>
+      <div class="ctrl">
+        <label for="cm-omega">Kecepatan sudut ω <output id="cm-out-omega">4 rad/s</output></label>
+        <input id="cm-omega" type="range" min="1" max="8" value="4" step="0.1">
+      </div>
+    </div>
+    <div class="sim-readout">
+      <div><span class="ro-label">Periode T</span><span class="ro-val" id="cm-ro-T">—</span></div>
+      <div><span class="ro-label">Kelajuan linear v</span><span class="ro-val" id="cm-ro-v">—</span></div>
+      <div><span class="ro-label">Perc. sentripetal aₛ</span><span class="ro-val" id="cm-ro-as">—</span></div>
+    </div>
+    <figcaption>Garis kuning = kecepatan linear (menyinggung lintasan); garis gelap = percepatan sentripetal (menuju pusat). Frekuensi f mengikuti ω.<span class="credit">Simulasi · gerak melingkar beraturan</span></figcaption>
+  </figure>
+
+  <!-- ============ BAGIAN 4 — LATIHAN ============ -->
+  <div class="bagian-head" id="bagian-4">
+    <span class="bagian-num">Bagian 4</span>
+    <h2 class="bagian-title">Latihan</h2>
+  </div>
+  <div class="cover wide"><div class="img-ph cover-ph img-upload" data-bg="img/kinematika/Gerak Vertikal ke Atas.png" style="background-color:lightgrey"></div></div>
+
+  <section class="prose" id="quiz">
+    <div class="sim-head panel-head">
+      <span class="panel-label">Latihan</span>
+      <h3 class="panel-title">Uji Pemahamanmu</h3>
+    </div>
+
+    <div class="q" data-correct="B" data-explain="Perpindahan \(= 10 - 4 = 6\,\text{m}\) ke timur, sedangkan jaraknya 14 m.">
+      <span class="q-num">Soal 1</span>
+      <p class="q-text">Seorang siswa berjalan 10 m ke timur, lalu 4 m ke barat. Perpindahan siswa adalah…</p>
+      <button class="opt" data-opt="A"><span class="opt-l">A</span><span>14 m</span></button>
+      <button class="opt" data-opt="B"><span class="opt-l">B</span><span>6 m</span></button>
+      <button class="opt" data-opt="C"><span class="opt-l">C</span><span>4 m</span></button>
+      <button class="opt" data-opt="D"><span class="opt-l">D</span><span>0 m</span></button>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q" data-correct="C" data-explain="Kecepatan memiliki nilai dan arah, sehingga termasuk besaran vektor. Jarak, kelajuan, dan massa adalah besaran skalar.">
+      <span class="q-num">Soal 2</span>
+      <p class="q-text">Berikut yang termasuk besaran vektor adalah…</p>
+      <button class="opt" data-opt="A"><span class="opt-l">A</span><span>Jarak</span></button>
+      <button class="opt" data-opt="B"><span class="opt-l">B</span><span>Kelajuan</span></button>
+      <button class="opt" data-opt="C"><span class="opt-l">C</span><span>Kecepatan</span></button>
+      <button class="opt" data-opt="D"><span class="opt-l">D</span><span>Massa</span></button>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q" data-correct="C" data-explain="Pada GLB kecepatan tetap, sehingga percepatannya nol (\(a = 0\)).">
+      <span class="q-num">Soal 3</span>
+      <p class="q-text">Ciri utama Gerak Lurus Beraturan (GLB) adalah…</p>
+      <button class="opt" data-opt="A"><span class="opt-l">A</span><span>Percepatan tetap tetapi tidak nol</span></button>
+      <button class="opt" data-opt="B"><span class="opt-l">B</span><span>Kecepatan berubah secara teratur</span></button>
+      <button class="opt" data-opt="C"><span class="opt-l">C</span><span>Percepatannya nol</span></button>
+      <button class="opt" data-opt="D"><span class="opt-l">D</span><span>Lintasannya melengkung</span></button>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q" data-correct="B" data-explain="\(h = \tfrac12 gt^2\) → \(45 = 5t^2\) → \(t^2 = 9\) → \(t = 3\,\text{s}\).">
+      <span class="q-num">Soal 4</span>
+      <p class="q-text">Sebuah batu dijatuhkan dari ketinggian 45 m (\(g = 10\,\text{m/s}^2\)). Waktu yang dibutuhkan batu sampai ke tanah adalah…</p>
+      <button class="opt" data-opt="A"><span class="opt-l">A</span><span>2 s</span></button>
+      <button class="opt" data-opt="B"><span class="opt-l">B</span><span>3 s</span></button>
+      <button class="opt" data-opt="C"><span class="opt-l">C</span><span>4,5 s</span></button>
+      <button class="opt" data-opt="D"><span class="opt-l">D</span><span>9 s</span></button>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q" data-correct="B" data-explain="\(h_{\text{maks}} = v_0^2/(2g) = 20^2/(2\cdot10) = 400/20 = 20\,\text{m}\).">
+      <span class="q-num">Soal 5</span>
+      <p class="q-text">Bola dilempar vertikal ke atas dengan kecepatan awal 20 m/s (\(g = 10\,\text{m/s}^2\)). Tinggi maksimumnya adalah…</p>
+      <button class="opt" data-opt="A"><span class="opt-l">A</span><span>10 m</span></button>
+      <button class="opt" data-opt="B"><span class="opt-l">B</span><span>20 m</span></button>
+      <button class="opt" data-opt="C"><span class="opt-l">C</span><span>40 m</span></button>
+      <button class="opt" data-opt="D"><span class="opt-l">D</span><span>80 m</span></button>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q" data-correct="C" data-explain="Di titik tertinggi \(v_y = 0\); benda hanya memiliki komponen kecepatan horizontal.">
+      <span class="q-num">Soal 6</span>
+      <p class="q-text">Pada titik tertinggi lintasan parabola, kecepatan vertikal benda…</p>
+      <button class="opt" data-opt="A"><span class="opt-l">A</span><span>Bernilai maksimum</span></button>
+      <button class="opt" data-opt="B"><span class="opt-l">B</span><span>Sama dengan kecepatan awal</span></button>
+      <button class="opt" data-opt="C"><span class="opt-l">C</span><span>Bernilai nol</span></button>
+      <button class="opt" data-opt="D"><span class="opt-l">D</span><span>Berbalik arah dua kali</span></button>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q" data-correct="A" data-explain="\(v = \omega R = 4 \times 0{,}5 = 2\,\text{m/s}\).">
+      <span class="q-num">Soal 7</span>
+      <p class="q-text">Sebuah roda berjari-jari 0,5 m berputar dengan kecepatan sudut 4 rad/s. Kelajuan linear titik di tepi roda adalah…</p>
+      <button class="opt" data-opt="A"><span class="opt-l">A</span><span>2 m/s</span></button>
+      <button class="opt" data-opt="B"><span class="opt-l">B</span><span>4 m/s</span></button>
+      <button class="opt" data-opt="C"><span class="opt-l">C</span><span>8 m/s</span></button>
+      <button class="opt" data-opt="D"><span class="opt-l">D</span><span>0,5 m/s</span></button>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="quiz-score" id="quiz-score"></div>
+  </section>
+
+</main>
+
+<!-- ====== Video modal (satu per tombol; id cocok dgn data-video tombolnya) ====== -->
+<!-- Video modal: Pengertian Gerak (dari tombol sidepanel "Insight") -->
+<div class="vmodal" id="vmodal-pengertian-gerak" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Pengertian Gerak">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: tombol "Insight" pada bagian "Pengertian Gerak". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Gerak Jatuh Bebas.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Kecepatan (dari tombol sidepanel "Highlight") -->
+<div class="vmodal" id="vmodal-kecepatan" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Kecepatan">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: tombol "Highlight" pada bagian "Kecepatan". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Kecepatan.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Vertikal ke Atas (dari tombol sidepanel "Catatan") -->
+<div class="vmodal" id="vmodal-vertikal-atas" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Vertikal ke Atas">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: tombol "Catatan" pada bagian "Gerak Vertikal ke Atas". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Gerak Vertikal ke Atas.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Komponen Kecepatan Awal pada Gerak Parabola (dari tombol sidepanel "Insight") -->
+<div class="vmodal" id="vmodal-komponen-parabola" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Komponen Kecepatan Awal pada Gerak Parabola">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: tombol "Insight" pada bagian "Komponen Kecepatan Awal pada Gerak Parabola". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Melingkar (dari tombol sidepanel "Info") -->
+<div class="vmodal" id="vmodal-gerak-melingkar" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Melingkar">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: tombol "Info" pada bagian "Gerak Melingkar". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Gerak Melingkar.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+
+<!-- ====== Video modal tambahan (sidepanel per section) ====== -->
+<!-- Video modal: Perpindahan (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-perpindahan" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Perpindahan">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Perpindahan". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Perbedaan Jarak dan Perpindahan (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-perbedaan-jarak-dan-perpindahan" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Perbedaan Jarak dan Perpindahan">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Perbedaan Jarak dan Perpindahan". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Jarak dan Perpindahan.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Besaran Skalar dan Vektor (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-besaran-skalar-dan-vektor" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Besaran Skalar dan Vektor">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Besaran Skalar dan Vektor". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Kelajuan (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-kelajuan" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Kelajuan">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Kelajuan". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Kelajuan.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Kelajuan dan Kecepatan Sesaat (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-kelajuan-dan-kecepatan-sesaat" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Kelajuan dan Kecepatan Sesaat">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Kelajuan dan Kecepatan Sesaat". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Percepatan (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-percepatan" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Percepatan">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Percepatan". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Kecepatan.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Lurus (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-lurus" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Lurus">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak Lurus". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Lurus Beraturan (GLB) (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-lurus-beraturan-glb" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Lurus Beraturan (GLB)">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak Lurus Beraturan (GLB)". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/GLB dan Grafik GLB.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Grafik pada GLB (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-grafik-pada-glb" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Grafik pada GLB">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Grafik pada GLB". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/GLB dan Grafik GLB.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Lurus Berubah Beraturan (GLBB) (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-lurus-berubah-beraturan-glbb" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Lurus Berubah Beraturan (GLBB)">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak Lurus Berubah Beraturan (GLBB)". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/GLBB dan Grafik GLBB.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Vertikal (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-vertikal" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Vertikal">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak Vertikal". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Jatuh Bebas (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-jatuh-bebas" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Jatuh Bebas">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak Jatuh Bebas". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Gerak Jatuh Bebas.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Vertikal ke Bawah (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-vertikal-ke-bawah" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Vertikal ke Bawah">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak Vertikal ke Bawah". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Gerak Vertikal ke Bawah.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Dua Dimensi (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-dua-dimensi" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Dua Dimensi">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak Dua Dimensi". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak Parabola (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-parabola" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak Parabola">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak Parabola". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Gerak Parabola.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak pada Sumbu-x (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-pada-sumbu-x" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak pada Sumbu-x">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak pada Sumbu-x". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Gerak pada Sumbu-y (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-gerak-pada-sumbu-y" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Gerak pada Sumbu-y">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Gerak pada Sumbu-y". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Kecepatan Benda pada Gerak Parabola (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-kecepatan-benda-pada-gerak-parabola" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Kecepatan Benda pada Gerak Parabola">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Kecepatan Benda pada Gerak Parabola". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Titik Tertinggi pada Gerak Parabola (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-titik-tertinggi-pada-gerak-parabola" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Titik Tertinggi pada Gerak Parabola">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Titik Tertinggi pada Gerak Parabola". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Jangkauan Mendatar (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-jangkauan-mendatar" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Jangkauan Mendatar">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Jangkauan Mendatar". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Periode dan Frekuensi (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-periode-dan-frekuensi" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Periode dan Frekuensi">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Periode dan Frekuensi". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Kecepatan Sudut (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-kecepatan-sudut" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Kecepatan Sudut">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Kecepatan Sudut". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Kelajuan Linear pada Gerak Melingkar (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-kelajuan-linear-pada-gerak-melingkar" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Kelajuan Linear pada Gerak Melingkar">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Kelajuan Linear pada Gerak Melingkar". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal: Percepatan Sentripetal (dari sidepanel section) -->
+<div class="vmodal" id="vmodal-percepatan-sentripetal" hidden>
+  <div class="vmodal-backdrop" data-vclose></div>
+  <div class="vmodal-dialog" role="dialog" aria-modal="true" aria-label="Pemutar video: Percepatan Sentripetal">
+    <button class="vmodal-close" type="button" data-vclose aria-label="Tutup pemutar">&times;</button>
+    <div class="vmodal-frame">
+      <!-- SUMBER: sidepanel pada bagian "Percepatan Sentripetal". Isi alamat video pada src <source> di bawah. -->
+      <video controls preload="metadata" playsinline>
+        <source src="img/kinematika/Percepatan Sentripetal.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ---- Helper warna dari token CSS (agar canvas ikut mode gelap) ---- */
+function ngColors(){
+  var s=getComputedStyle(document.documentElement);
+  function g(n,f){ return (s.getPropertyValue(n)||'').trim()||f; }
+  return {
+    INK:g('--ng-ink','#1a1a1a'), YEL:g('--ng-yellow','#ffcc00'),
+    MUT:g('--ng-muted','#767676'), BRD:g('--ng-border','#e2e2e2'),
+    SOFT:g('--ng-soft','#f5f5f5')
+  };
+}
+var REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* ---- KaTeX auto-render ---- */
+window.ngTypeset=function(el){ if(window.renderMathInElement){ try{ renderMathInElement(el,{ delimiters:[ {left:'\\[',right:'\\]',display:true}, {left:'\\(',right:'\\)',display:false} ], throwOnError:false }); }catch(_){} } };
+document.addEventListener('DOMContentLoaded',function(){ window.ngTypeset(document.body); });
+
+/* ---- Simulasi 1: Jarak vs Perpindahan ---- */
+(function(){
+  "use strict";
+  var canvas=document.getElementById('jp-canvas'); if(!canvas) return;
+  var ctx=canvas.getContext('2d');
+  var inE=document.getElementById('jp-east'), inW=document.getElementById('jp-west');
+  var outE=document.getElementById('jp-out-east'), outW=document.getElementById('jp-out-west');
+  var roJ=document.getElementById('jp-ro-jarak'), roP=document.getElementById('jp-ro-pindah'), roA=document.getElementById('jp-ro-arah');
+  var btn=document.getElementById('jp-run');
+  var dpr=Math.min(window.devicePixelRatio||1,2), W=0, H=200, raf=null;
+  function vals(){ var e=+inE.value, w=+inW.value; return {e:e,w:w,jarak:e+w,pindah:e-w}; }
+  function rng(v){ var lo=Math.min(v.pindah,0)-1, hi=Math.max(v.e,1)+1; return {lo:lo,hi:hi}; }
+  function draw(pos){
+    var c=ngColors(), v=vals(), r=rng(v);
+    ctx.clearRect(0,0,W,H);
+    var pL=24,pR=24, axW=W-pL-pR, y=H*0.62;
+    function X(m){ return pL + (m-r.lo)/(r.hi-r.lo)*axW; }
+    ctx.strokeStyle=c.INK; ctx.lineWidth=1.5; ctx.beginPath(); ctx.moveTo(pL,y); ctx.lineTo(W-pR,y); ctx.stroke();
+    ctx.font='11px "Plus Jakarta Sans",sans-serif'; ctx.textAlign='center';
+    var start=Math.ceil(r.lo/2)*2;
+    for(var m=start;m<=r.hi;m+=2){ var gx=X(m); ctx.strokeStyle=c.BRD; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(gx,y); ctx.lineTo(gx,y+5); ctx.stroke(); ctx.fillStyle=c.MUT; ctx.fillText(m,gx,y+18); }
+    /* titik acuan 0 */
+    ctx.strokeStyle=c.INK; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(X(0),y-9); ctx.lineTo(X(0),y+9); ctx.stroke();
+    ctx.fillStyle=c.INK; ctx.font='700 11px "Plus Jakarta Sans",sans-serif'; ctx.fillText('0 (acuan)',X(0),y-16);
+    /* vektor perpindahan */
+    if(v.pindah!==0){
+      ctx.strokeStyle=c.YEL; ctx.lineWidth=4; ctx.beginPath(); ctx.moveTo(X(0),y-32); ctx.lineTo(X(v.pindah),y-32); ctx.stroke();
+      var dir=v.pindah>0?1:-1, hx=X(v.pindah);
+      ctx.fillStyle=c.YEL; ctx.beginPath(); ctx.moveTo(hx,y-32); ctx.lineTo(hx-dir*9,y-37); ctx.lineTo(hx-dir*9,y-27); ctx.closePath(); ctx.fill();
+    }
+    /* benda */
+    var p=(pos==null)?v.pindah:pos, px=X(p);
+    ctx.beginPath(); ctx.arc(px,y,8,0,7); ctx.fillStyle=c.YEL; ctx.fill(); ctx.strokeStyle=c.INK; ctx.lineWidth=2; ctx.stroke();
+  }
+  function ro(){ var v=vals(); roJ.innerHTML=v.jarak+' <span class="u">m</span>'; roP.innerHTML=v.pindah+' <span class="u">m</span>'; roA.textContent=v.pindah>0?'Timur':(v.pindah<0?'Barat':'—'); }
+  function resize(){ var w=canvas.clientWidth||700; W=w; canvas.style.height=H+'px'; canvas.width=Math.round(w*dpr); canvas.height=Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0); draw(null); }
+  function run(){ if(raf)cancelAnimationFrame(raf); var v=vals(); if(REDUCE){draw(null);return;} var totD=v.e+v.w; if(totD===0){draw(0);return;} var dur=Math.min(Math.max(totD*120,700),2600), s=null;
+    (function tick(ts){ if(s==null)s=ts; var pr=(ts-s)/dur; if(pr>=1){draw(v.pindah);raf=null;return;} var d=totD*pr, pos=(d<=v.e)?d:(v.e-(d-v.e)); draw(pos); raf=requestAnimationFrame(tick); })(performance.now()); }
+  function oninput(){ outE.textContent=inE.value+' m'; outW.textContent=inW.value+' m'; ro(); if(raf){cancelAnimationFrame(raf);raf=null;} draw(null); }
+  inE.addEventListener('input',oninput); inW.addEventListener('input',oninput); btn.addEventListener('click',run); window.addEventListener('resize',resize);
+  outE.textContent=inE.value+' m'; outW.textContent=inW.value+' m'; ro(); resize();
+})();
+
+/* ---- Simulasi 2: GLB/GLBB grafik v-t ---- */
+(function(){
+  "use strict";
+  var canvas=document.getElementById('lr-canvas'); if(!canvas) return;
+  var ctx=canvas.getContext('2d');
+  var inV=document.getElementById('lr-v0'), inA=document.getElementById('lr-a'), inT=document.getElementById('lr-t');
+  var outV=document.getElementById('lr-out-v0'), outA=document.getElementById('lr-out-a'), outT=document.getElementById('lr-out-t');
+  var roM=document.getElementById('lr-ro-mode'), roVt=document.getElementById('lr-ro-vt'), roS=document.getElementById('lr-ro-s');
+  var btn=document.getElementById('lr-run');
+  var dpr=Math.min(window.devicePixelRatio||1,2), W=0, H=320, raf=null;
+  function par(){ var v0=+inV.value, a=+inA.value, T=+inT.value; return {v0:v0,a:a,T:T,vt:v0+a*T,s:v0*T+0.5*a*T*T}; }
+  function bounds(p){ var vt=p.vt; var hi=Math.max(p.v0,vt,1)+1; var lo=Math.min(p.v0,vt,0); if(lo>0)lo=0; return {lo:lo-(lo<0?1:0),hi:hi}; }
+  function draw(prog){
+    var c=ngColors(), p=par(), b=bounds(p);
+    ctx.clearRect(0,0,W,H);
+    var pL=46,pR=20,pT=20,pB=36, pw=W-pL-pR, ph=H-pT-pB;
+    function X(t){ return pL + (t/p.T)*pw; }
+    function Y(v){ return (H-pB) - (v-b.lo)/(b.hi-b.lo)*ph; }
+    /* sumbu */
+    ctx.strokeStyle=c.INK; ctx.lineWidth=1.5; ctx.beginPath(); ctx.moveTo(pL,pT); ctx.lineTo(pL,H-pB); ctx.lineTo(W-pR,H-pB); ctx.stroke();
+    ctx.fillStyle=c.MUT; ctx.font='11px "Plus Jakarta Sans",sans-serif';
+    /* garis nol bila ada v negatif */
+    if(b.lo<0){ ctx.strokeStyle=c.BRD; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(pL,Y(0)); ctx.lineTo(W-pR,Y(0)); ctx.stroke(); }
+    ctx.textAlign='center'; for(var t=0;t<=p.T+0.001;t+=Math.max(1,Math.round(p.T/5))){ var gx=X(t); ctx.strokeStyle=c.BRD; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(gx,H-pB); ctx.lineTo(gx,H-pB+5); ctx.stroke(); ctx.fillStyle=c.MUT; ctx.fillText(t+'s',gx,H-pB+18); }
+    ctx.textAlign='right'; ctx.fillText('v (m/s)',pL-8,pT+10);
+    /* area di bawah grafik */
+    ctx.fillStyle=c.SOFT; ctx.beginPath(); ctx.moveTo(X(0),Y(0)); ctx.lineTo(X(0),Y(p.v0)); ctx.lineTo(X(p.T),Y(p.vt)); ctx.lineTo(X(p.T),Y(0)); ctx.closePath(); ctx.fill();
+    /* garis v-t */
+    ctx.strokeStyle=c.INK; ctx.lineWidth=2.5; ctx.beginPath(); ctx.moveTo(X(0),Y(p.v0)); ctx.lineTo(X(p.T),Y(p.vt)); ctx.stroke();
+    /* marker bergerak */
+    var tm=(prog==null)?p.T:p.T*prog, vm=p.v0+p.a*tm;
+    ctx.beginPath(); ctx.arc(X(tm),Y(vm),6,0,7); ctx.fillStyle=c.YEL; ctx.fill(); ctx.strokeStyle=c.INK; ctx.lineWidth=2; ctx.stroke();
+  }
+  function ro(){ var p=par(); roM.textContent=(p.a===0?'GLB':'GLBB'); roVt.innerHTML=p.vt.toFixed(1)+' <span class="u">m/s</span>'; roS.innerHTML=p.s.toFixed(1)+' <span class="u">m</span>'; }
+  function resize(){ var w=canvas.clientWidth||700; W=w; canvas.style.height=H+'px'; canvas.width=Math.round(w*dpr); canvas.height=Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0); draw(null); }
+  function run(){ if(raf)cancelAnimationFrame(raf); if(REDUCE){draw(null);return;} var dur=1400, s=null; (function tick(ts){ if(s==null)s=ts; var pr=(ts-s)/dur; if(pr>=1){draw(null);raf=null;return;} draw(pr); raf=requestAnimationFrame(tick); })(performance.now()); }
+  function oninput(){ outV.textContent=inV.value+' m/s'; outA.textContent=(+inA.value)+' m/s²'; outT.textContent=inT.value+' s'; ro(); if(raf){cancelAnimationFrame(raf);raf=null;} draw(null); }
+  inV.addEventListener('input',oninput); inA.addEventListener('input',oninput); inT.addEventListener('input',oninput); btn.addEventListener('click',run); window.addEventListener('resize',resize);
+  oninput(); resize();
+})();
+
+/* ---- Simulasi 3: Gerak Vertikal ---- */
+(function(){
+  "use strict";
+  var canvas=document.getElementById('gv-canvas'); if(!canvas) return;
+  var ctx=canvas.getContext('2d'), g=10;
+  var inV=document.getElementById('gv-v0'), inH=document.getElementById('gv-h');
+  var outV=document.getElementById('gv-out-v0'), outH=document.getElementById('gv-out-h');
+  var roT=document.getElementById('gv-ro-t'), roVv=document.getElementById('gv-ro-v'), roH=document.getElementById('gv-ro-h');
+  var btn=document.getElementById('gv-run');
+  var modeBtns=document.querySelectorAll('[data-gvmode]');
+  var dpr=Math.min(window.devicePixelRatio||1,2), W=0, H=340, raf=null, mode='jatuh';
+  function calc(){
+    var v0=+inV.value, h=+inH.value, out;
+    if(mode==='jatuh'){ var t=Math.sqrt(2*h/g); out={tEnd:t,maxH:h,vArr:Math.sqrt(2*g*h),up:false,h0:h,v0:0}; }
+    else if(mode==='bawah'){ var tb=(-v0+Math.sqrt(v0*v0+2*g*h))/g; out={tEnd:tb,maxH:h,vArr:Math.sqrt(v0*v0+2*g*h),up:false,h0:h,v0:v0}; }
+    else { var hmax=v0*v0/(2*g), tmax=v0/g; out={tEnd:2*tmax,maxH:Math.max(hmax,1),vArr:v0,up:true,h0:0,v0:v0,hmax:hmax,tmax:tmax}; }
+    return out;
+  }
+  function posAt(o,t){
+    if(mode==='atas'){ return o.v0*t-0.5*g*t*t; }
+    return o.h0-(o.v0*t+0.5*g*t*t);
+  }
+  function draw(t){
+    var c=ngColors(), o=calc();
+    ctx.clearRect(0,0,W,H);
+    var pT=24,pB=40, scH=H-pT-pB, cx=W*0.5;
+    var maxH=o.maxH; function Y(h){ return (H-pB)-(h/maxH)*scH; }
+    /* tanah */
+    ctx.strokeStyle=c.INK; ctx.lineWidth=1.5; ctx.beginPath(); ctx.moveTo(28,H-pB); ctx.lineTo(W-28,H-pB); ctx.stroke();
+    /* skala ketinggian */
+    ctx.fillStyle=c.MUT; ctx.font='11px "Plus Jakarta Sans",sans-serif'; ctx.textAlign='left';
+    var stp=maxH<=20?5:(maxH<=50?10:20);
+    for(var m=0;m<=maxH+0.01;m+=stp){ var gy=Y(m); ctx.strokeStyle=c.BRD; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(28,gy); ctx.lineTo(W-28,gy); ctx.stroke(); ctx.fillStyle=c.MUT; ctx.fillText(m+' m',32,gy-4); }
+    /* garis tinggi maks (atas) */
+    if(mode==='atas'){ ctx.strokeStyle=c.YEL; ctx.lineWidth=1.5; ctx.setLineDash([4,4]); ctx.beginPath(); ctx.moveTo(28,Y(o.hmax)); ctx.lineTo(W-28,Y(o.hmax)); ctx.stroke(); ctx.setLineDash([]); }
+    /* benda */
+    var hh=(t==null)?(mode==='atas'?o.hmax:0):posAt(o,t); if(hh<0)hh=0; if(hh>maxH)hh=maxH;
+    var by=Y(hh);
+    ctx.beginPath(); ctx.arc(cx,by,10,0,7); ctx.fillStyle=c.YEL; ctx.fill(); ctx.strokeStyle=c.INK; ctx.lineWidth=2; ctx.stroke();
+    /* panah arah */
+    ctx.strokeStyle=c.INK; ctx.lineWidth=2; var ar=(mode==='atas'&&(t==null||t<o.tmax))?-1:1;
+    ctx.beginPath(); ctx.moveTo(cx+22,by); ctx.lineTo(cx+22,by+ar*16); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx+22,by+ar*16); ctx.lineTo(cx+18,by+ar*10); ctx.lineTo(cx+26,by+ar*10); ctx.closePath(); ctx.fillStyle=c.INK; ctx.fill();
+  }
+  function ro(){ var o=calc(); roT.innerHTML=o.tEnd.toFixed(2)+' <span class="u">s</span>'; roVv.innerHTML=o.vArr.toFixed(1)+' <span class="u">m/s</span>'; roH.innerHTML=(mode==='atas'?o.hmax:o.h0).toFixed(1)+' <span class="u">m</span>'; }
+  function syncControls(){
+    if(mode==='jatuh'){ inV.value=0; inV.disabled=true; inH.disabled=false; }
+    else if(mode==='bawah'){ inV.disabled=false; inH.disabled=false; }
+    else { inV.disabled=false; inH.disabled=true; }
+    outV.textContent=inV.value+' m/s'; outH.textContent=inH.value+' m';
+  }
+  function resize(){ var w=canvas.clientWidth||700; W=w; canvas.style.height=H+'px'; canvas.width=Math.round(w*dpr); canvas.height=Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0); draw(null); }
+  function run(){ if(raf)cancelAnimationFrame(raf); var o=calc(); if(REDUCE){draw(null);return;} var dur=Math.min(Math.max(o.tEnd*500,700),2600), s=null; (function tick(ts){ if(s==null)s=ts; var pr=(ts-s)/dur; if(pr>=1){draw(o.tEnd);raf=null;return;} draw(o.tEnd*pr); raf=requestAnimationFrame(tick); })(performance.now()); }
+  function oninput(){ outV.textContent=inV.value+' m/s'; outH.textContent=inH.value+' m'; ro(); if(raf){cancelAnimationFrame(raf);raf=null;} draw(null); }
+  modeBtns.forEach(function(b){ b.addEventListener('click',function(){ mode=b.getAttribute('data-gvmode'); modeBtns.forEach(function(x){ x.classList.toggle('is-active',x===b); }); syncControls(); ro(); if(raf){cancelAnimationFrame(raf);raf=null;} draw(null); }); });
+  inV.addEventListener('input',oninput); inH.addEventListener('input',oninput); btn.addEventListener('click',run); window.addEventListener('resize',resize);
+  syncControls(); ro(); resize();
+})();
+
+/* ---- Simulasi 4: Gerak Parabola ---- */
+(function(){
+  "use strict";
+  var g=9.8, canvas=document.getElementById('pb-canvas'); if(!canvas) return;
+  var ctx=canvas.getContext('2d');
+  var inA=document.getElementById('pb-angle'), inV=document.getElementById('pb-vel');
+  var outA=document.getElementById('pb-out-angle'), outV=document.getElementById('pb-out-vel');
+  var roR=document.getElementById('pb-ro-range'), roH=document.getElementById('pb-ro-height'), roT=document.getElementById('pb-ro-time');
+  var btn=document.getElementById('pb-launch');
+  var dpr=Math.min(window.devicePixelRatio||1,2), W=0, H=360, raf=null;
+  function params(){ var ang=+inA.value, v=+inV.value, rad=ang*Math.PI/180; var vx=v*Math.cos(rad), vy=v*Math.sin(rad); var tF=2*vy/g; return {vx:vx,vy:vy,tF:tF,range:vx*tF,hmax:vy*vy/(2*g)}; }
+  function fr(p){ var pL=44,pR=22,pT=22,pB=38, pw=W-pL-pR, ph=H-pT-pB; return {pL:pL,s:Math.min(pw/Math.max(p.range,.001),ph/Math.max(p.hmax,.001)),gy:H-pB}; }
+  function step(r){ if(r<=0)return 10; var raw=r/6, pw=Math.pow(10,Math.floor(Math.log10(raw))), n=raw/pw; return (n<1.5?1:n<3.5?2:n<7.5?5:10)*pw; }
+  function draw(prog){
+    var c=ngColors(), p=params(), f=fr(p); ctx.clearRect(0,0,W,H);
+    ctx.strokeStyle=c.INK; ctx.lineWidth=1.5; ctx.beginPath(); ctx.moveTo(f.pL,f.gy); ctx.lineTo(W-8,f.gy); ctx.stroke();
+    ctx.fillStyle=c.MUT; ctx.font='11px "Plus Jakarta Sans",sans-serif'; ctx.textAlign='center';
+    var st=step(p.range);
+    for(var m=0;m<=p.range+.01;m+=st){ var gx=f.pL+m*f.s; ctx.strokeStyle=c.BRD; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(gx,f.gy); ctx.lineTo(gx,f.gy+5); ctx.stroke(); ctx.fillStyle=c.MUT; ctx.fillText(Math.round(m),gx,f.gy+18); }
+    ctx.strokeStyle=c.INK; ctx.lineWidth=2; ctx.setLineDash([2,6]); ctx.lineCap='round'; ctx.beginPath();
+    var N=90; for(var i=0;i<=N;i++){ var t=p.tF*i/N, x=p.vx*t, y=p.vy*t-.5*g*t*t, px=f.pL+x*f.s, py=f.gy-y*f.s; if(i===0)ctx.moveTo(px,py); else ctx.lineTo(px,py); }
+    ctx.stroke(); ctx.setLineDash([]);
+    var ax=f.pL+(p.vx*(p.tF/2))*f.s, ay=f.gy-p.hmax*f.s;
+    ctx.strokeStyle=c.MUT; ctx.lineWidth=1; ctx.setLineDash([4,5]); ctx.beginPath(); ctx.moveTo(ax,ay); ctx.lineTo(ax,f.gy); ctx.stroke(); ctx.setLineDash([]);
+    ctx.beginPath(); ctx.arc(ax,ay,4,0,7); ctx.fillStyle=c.YEL; ctx.fill(); ctx.strokeStyle=c.INK; ctx.lineWidth=1.5; ctx.stroke();
+    var ts=(prog==null)?p.tF:prog, bx=p.vx*ts, by=p.vy*ts-.5*g*ts*ts; if(by<0)by=0;
+    var ppx=f.pL+bx*f.s, ppy=f.gy-by*f.s; ctx.beginPath(); ctx.arc(ppx,ppy,7,0,7); ctx.fillStyle=c.YEL; ctx.fill(); ctx.strokeStyle=c.INK; ctx.lineWidth=2; ctx.stroke();
+  }
+  function ro(){ var p=params(); roR.innerHTML=p.range.toFixed(1)+' <span class="u">m</span>'; roH.innerHTML=p.hmax.toFixed(1)+' <span class="u">m</span>'; roT.innerHTML=p.tF.toFixed(2)+' <span class="u">s</span>'; }
+  function resize(){ var w=canvas.clientWidth||700; W=w; canvas.style.height=H+'px'; canvas.width=Math.round(w*dpr); canvas.height=Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0); draw(null); }
+  function launch(){ if(raf)cancelAnimationFrame(raf); var p=params(); if(REDUCE){draw(null);return;} var dur=Math.min(Math.max(p.tF*600,700),2200), s=null; (function tick(ts){ if(s==null)s=ts; var pr=(ts-s)/dur; if(pr>=1){draw(p.tF);raf=null;return;} draw(p.tF*pr); raf=requestAnimationFrame(tick); })(performance.now()); }
+  function oninput(){ outA.textContent=inA.value+'°'; outV.textContent=inV.value+' m/s'; ro(); if(raf){cancelAnimationFrame(raf);raf=null;} draw(null); }
+  inA.addEventListener('input',oninput); inV.addEventListener('input',oninput); btn.addEventListener('click',launch); window.addEventListener('resize',resize);
+  outA.textContent=inA.value+'°'; outV.textContent=inV.value+' m/s'; ro(); resize();
+})();
+
+/* ---- Simulasi 5: Gerak Melingkar Beraturan ---- */
+(function(){
+  "use strict";
+  var canvas=document.getElementById('cm-canvas'); if(!canvas) return;
+  var ctx=canvas.getContext('2d');
+  var inR=document.getElementById('cm-r'), inW2=document.getElementById('cm-omega');
+  var outR=document.getElementById('cm-out-r'), outW2=document.getElementById('cm-out-omega');
+  var roT=document.getElementById('cm-ro-T'), roV=document.getElementById('cm-ro-v'), roAs=document.getElementById('cm-ro-as');
+  var dpr=Math.min(window.devicePixelRatio||1,2), W=0, H=320, raf=null, ang=0, last=null;
+  function fmt(n){ return n.toFixed(2).replace('.',','); }
+  function par(){ var R=+inR.value, w=+inW2.value; return {R:R,w:w,T:2*Math.PI/w,f:w/(2*Math.PI),v:w*R,as:w*w*R}; }
+  function draw(){
+    var c=ngColors(), p=par();
+    ctx.clearRect(0,0,W,H);
+    var cx=W*0.5, cy=H*0.5, rad=Math.min(W,H)*0.32;
+    /* lintasan */
+    ctx.strokeStyle=c.BRD; ctx.lineWidth=1.5; ctx.beginPath(); ctx.arc(cx,cy,rad,0,7); ctx.stroke();
+    /* pusat */
+    ctx.fillStyle=c.MUT; ctx.beginPath(); ctx.arc(cx,cy,3,0,7); ctx.fill();
+    /* jari-jari */
+    var bx=cx+rad*Math.cos(ang), by=cy+rad*Math.sin(ang);
+    ctx.strokeStyle=c.BRD; ctx.lineWidth=1; ctx.setLineDash([4,4]); ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(bx,by); ctx.stroke(); ctx.setLineDash([]);
+    /* percepatan sentripetal (menuju pusat) */
+    var asLen=rad*0.45; ctx.strokeStyle=c.INK; ctx.lineWidth=2.5; ctx.beginPath(); ctx.moveTo(bx,by); ctx.lineTo(bx+(cx-bx)/rad*asLen,by+(cy-by)/rad*asLen); ctx.stroke();
+    var ax=cx-bx, ay=cy-by, al=Math.sqrt(ax*ax+ay*ay); ax/=al; ay/=al; var ex=bx+ax*asLen, ey=by+ay*asLen;
+    ctx.fillStyle=c.INK; ctx.beginPath(); ctx.moveTo(ex,ey); ctx.lineTo(ex-ax*8-ay*5,ey-ay*8+ax*5); ctx.lineTo(ex-ax*8+ay*5,ey-ay*8-ax*5); ctx.closePath(); ctx.fill();
+    /* kecepatan linear (tangen) */
+    var tx=-Math.sin(ang), ty=Math.cos(ang), vLen=rad*0.6; var vx=bx+tx*vLen, vy=by+ty*vLen;
+    ctx.strokeStyle=c.YEL; ctx.lineWidth=3; ctx.beginPath(); ctx.moveTo(bx,by); ctx.lineTo(vx,vy); ctx.stroke();
+    ctx.fillStyle=c.YEL; ctx.beginPath(); ctx.moveTo(vx,vy); ctx.lineTo(vx-tx*9-ty*5,vy-ty*9+tx*5); ctx.lineTo(vx-tx*9+ty*5,vy-ty*9-tx*5); ctx.closePath(); ctx.fill();
+    /* benda */
+    ctx.beginPath(); ctx.arc(bx,by,9,0,7); ctx.fillStyle=c.YEL; ctx.fill(); ctx.strokeStyle=c.INK; ctx.lineWidth=2; ctx.stroke();
+  }
+  function ro(){ var p=par(); roT.innerHTML=fmt(p.T)+' <span class="u">s</span>'; roV.innerHTML=fmt(p.v)+' <span class="u">m/s</span>'; roAs.innerHTML=fmt(p.as)+' <span class="u">m/s²</span>'; }
+  function resize(){ var w=canvas.clientWidth||700; W=w; canvas.style.height=H+'px'; canvas.width=Math.round(w*dpr); canvas.height=Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0); draw(); }
+  function loop(ts){ var p=par(); if(last==null)last=ts; var dt=(ts-last)/1000; last=ts; ang+=p.w*dt*0.5; draw(); raf=requestAnimationFrame(loop); }
+  function oninput(){ outR.textContent=fmt(+inR.value)+' m'; outW2.textContent=fmt(+inW2.value)+' rad/s'; ro(); if(REDUCE)draw(); }
+  inR.addEventListener('input',oninput); inW2.addEventListener('input',oninput); window.addEventListener('resize',resize);
+  oninput(); resize();
+  if(!REDUCE){ raf=requestAnimationFrame(loop); }
+})();
+
+/* ---- Latihan / kuis ---- */
+(function(){
+  "use strict";
+  var quiz=document.getElementById('quiz'); if(!quiz) return;
+  var qs=quiz.querySelectorAll('.q'), total=qs.length, answered=0, correct=0;
+  var scoreEl=document.getElementById('quiz-score');
+  qs.forEach(function(q){
+    var corr=q.getAttribute('data-correct'), explain=q.getAttribute('data-explain')||'';
+    var opts=q.querySelectorAll('.opt'), fb=q.querySelector('.q-feedback'), done=false;
+    opts.forEach(function(opt){
+      opt.addEventListener('click',function(){
+        if(done)return; done=true; var chosen=opt.getAttribute('data-opt');
+        opts.forEach(function(o){ o.disabled=true; if(o.getAttribute('data-opt')===corr)o.classList.add('is-correct'); });
+        var ok=chosen===corr; if(!ok)opt.classList.add('is-wrong');
+        fb.className='q-feedback show '+(ok?'ok':'no');
+        fb.innerHTML=(ok?'<strong>Benar.</strong> ':'<strong>Belum tepat.</strong> Jawaban: '+corr+'. ')+explain;
+        if(window.ngTypeset)window.ngTypeset(fb);
+        answered++; if(ok)correct++;
+        if(answered===total){ scoreEl.className='quiz-score show'; scoreEl.textContent='Skor kamu: '+correct+' dari '+total+' benar.'; }
+      });
+    });
+  });
+})();
+
+/* ---- Video modal (multi: tiap tombol [data-video] -> vmodal ber-id sendiri) ---- */
+(function(){
+  "use strict";
+  function close(modal){ modal.hidden=true; document.body.style.overflow=''; var v=modal.querySelector('video'); if(v){ try{ v.pause(); }catch(_){} } }
+  document.querySelectorAll('[data-video]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var modal=document.getElementById(b.getAttribute('data-video')||''); if(!modal) return;
+      modal.hidden=false; document.body.style.overflow='hidden';
+      var v=modal.querySelector('video'); if(v){ try{ v.currentTime=0; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }catch(_){} }
+    });
+  });
+  document.querySelectorAll('.vmodal').forEach(function(modal){
+    modal.querySelectorAll('[data-vclose]').forEach(function(b){ b.addEventListener('click',function(){ close(modal); }); });
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ document.querySelectorAll('.vmodal:not([hidden])').forEach(close); } });
+})();
+
+/* ---- Burger menu ---- */
+(function(){
+  "use strict";
+  var toggle=document.querySelector('.nav-toggle'), list=document.getElementById('nav-list');
+  if(!toggle||!list) return;
+  function setOpen(open){ list.hidden=!open; toggle.setAttribute('aria-expanded',open?'true':'false'); }
+  toggle.addEventListener('click',function(e){ e.stopPropagation(); setOpen(list.hidden); });
+  list.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var href=a.getAttribute('href'), target=(href&&href.charAt(0)==='#')?document.getElementById(href.slice(1)):null;
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({ behavior:REDUCE?'auto':'smooth', block:'start' });
+        if(history.replaceState){ try{ history.replaceState(null,'',href); }catch(_){} }
+      }
+      setOpen(false);
+    });
+  });
+  document.addEventListener('click',function(e){ if(!list.hidden && !list.contains(e.target) && !toggle.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setOpen(false); });
+})();
+
+/* ---- Toggle tema ---- */
+(function(){
+  "use strict";
+  var btn=document.querySelector('.theme-toggle'); if(!btn) return;
+  function apply(mode){ document.documentElement.setAttribute('data-theme',mode); btn.setAttribute('aria-pressed', mode==='dark'?'true':'false'); window.dispatchEvent(new Event('resize')); }
+  btn.addEventListener('click',function(){ var cur=document.documentElement.getAttribute('data-theme')==='dark'?'dark':'light'; apply(cur==='dark'?'light':'dark'); });
+})();
+
+/* ---- Tombol "Mulai Belajar" ---- */
+(function(){
+  "use strict";
+  var cta=document.querySelector('.hero-inner .btn'); if(!cta) return;
+  cta.addEventListener('click',function(e){
+    var href=cta.getAttribute('href'), target=(href&&href.charAt(0)==='#')?document.getElementById(href.slice(1)):null;
+    if(target){ e.preventDefault(); target.scrollIntoView({ behavior:REDUCE?'auto':'smooth', block:'start' }); }
+  });
+})();
+
+/* ---- Lazy background-image (cover & hero) ---- */
+(function(){
+  "use strict";
+  var els=document.querySelectorAll('[data-bg]'); if(!els.length) return;
+  function load(el){ el.style.backgroundImage="url('"+el.getAttribute('data-bg')+"')"; el.removeAttribute('data-bg'); }
+  if(!('IntersectionObserver' in window)){ els.forEach(load); return; }
+  var io=new IntersectionObserver(function(entries,obs){
+    entries.forEach(function(e){ if(e.isIntersecting){ load(e.target); obs.unobserve(e.target); } });
+  },{ rootMargin:'200px 0px' });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+</body>
+</html>

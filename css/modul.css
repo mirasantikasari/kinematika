@@ -103,11 +103,11 @@
   .btn-icon svg{ width:22px; height:22px; }
 
   /* ---- Tombol mengambang (tema + burger) ---- */
-  .navmenu{ position:fixed; top:24px; right:24px; z-index:90; display:flex; gap:8px; }
+  .navmenu{ position:fixed; top:24px; left:24px; z-index:90; display:flex; gap:8px; }
   .theme-toggle .ic-sun{ display:none; }
   [data-theme="dark"] .theme-toggle .ic-moon{ display:none; }
   [data-theme="dark"] .theme-toggle .ic-sun{ display:block; }
-  .nav-list{ position:absolute; top:calc(100% + 8px); right:0; min-width:248px; background:var(--ng-white); border:1px solid var(--ng-border); padding:6px 0; box-shadow:0 10px 34px rgba(0,0,0,.14); }
+  .nav-list{ position:absolute; top:calc(100% + 8px); left:0; min-width:248px; background:var(--ng-white); border:1px solid var(--ng-border); padding:6px 0; box-shadow:0 10px 34px rgba(0,0,0,.14); }
   .nav-list[hidden]{ display:none; }
   .nav-list a{ display:block; padding:12px 18px; font-family:var(--sans); text-decoration:none; color:var(--ng-ink); }
   .nav-list a:hover{ background:var(--ng-soft); }
@@ -268,7 +268,7 @@
   .katex{ font-size:1.05em; }
   .eq-body .katex{ font-size:1em; line-height:1.7; }
   .ket .katex, .q-text .katex, .ex-body .katex, .q-feedback .katex{ font-size:1.02em; }
-  .eq-body, .ex-body{ overflow-x:auto; }
+  /* .eq-body, .ex-body{ overflow-x:auto; } */
 
   /* ---- List dalam prose ---- */
   .prose ol{ margin:0 0 22px; padding-left:1.5em; }
@@ -290,5 +290,5 @@
     .article-header{ padding-top:36px; }
     .bagian-head{ margin-top:64px; }
     .sim-readout{ grid-template-columns:1fr; } .ro-val{ font-size:20px; }
-    .navmenu{ top:16px; right:16px; }
+    .navmenu{ top:16px; left:16px; }
   }
