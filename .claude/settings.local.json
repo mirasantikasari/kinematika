@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 convert_acuan.py)",
+      "Bash(python3 -)",
+      "Bash(cd \"/Users/scola/Documents/Scola *)",
+      "Read(//tmp/**)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}
